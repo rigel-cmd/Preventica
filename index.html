@@ -11,7 +11,8 @@
 <title>Préventica Lyon – parcours du 6 octobre</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap"></noscript>
 <style>html,body{margin:0;padding:0;height:100%;background:#E9EDF0;overscroll-behavior:none}</style>
 </head>
 <body>
@@ -27,14 +28,14 @@
 /* ———— Charte Victimes & Préjudices ———— */
 #vpo-parcours{--ardoise:#304859;--ardoise-fonce:#23384A;--rouge:#B52026;--rouge-fonce:#9C1B20;--rose:#FBE8E9;--orange:#FCAF19;--vert:#8EC33F;--creme:#FDF8E6;--gris:#F4F6F8;--texte:#3A4650;--texte-doux:#5B6770;--bord:#E3E8EC;--ombre:0 2px 4px rgba(35,56,74,.04),0 18px 36px -20px rgba(35,56,74,.35);
 --haut-sur:env(safe-area-inset-top,0px);--bas-sur:env(safe-area-inset-bottom,0px);
-display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100dvh;max-width:560px;margin:0 auto;background:#fff;color:var(--texte);font-family:"Open Sans",sans-serif;font-size:15px;line-height:1.5;text-align:left;overflow:hidden;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
+display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100dvh;max-width:560px;margin:0 auto;background:#fff;color:var(--texte);font-family:"Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;line-height:1.5;text-align:left;overflow:hidden;-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}
 #vpo-parcours :is(h1,h2,h3,p,ul,ol,li,figure,small,mark,button){margin:0;padding:0;font:inherit;color:inherit;list-style:none;letter-spacing:normal;text-transform:none}
 #vpo-parcours *,#vpo-parcours *::before,#vpo-parcours *::after{box-sizing:border-box}
 #vpo-parcours button{border:0;background:none;cursor:pointer;touch-action:manipulation}
 #vpo-parcours svg{display:block}
 #vpo-parcours strong{font-weight:700}
 #vpo-parcours [hidden]{display:none!important}
-#vpo-parcours :is(.vpo-titre,.vpo-h2,.vpo-h3,.vpo-heure,.vpo-type,.vpo-mini,.vpo-pilule,.vpo-onglet,.vpo-filtre,.vpo-puce,.vpo-code,.vpo-prio,.vpo-carte,.vpo-lettre,.vpo-creneau,.vpo-btn,.vpo-compte,.vpo-chiffre,.vpo-cible,.vpo-rail button){font-family:"Poppins",sans-serif}
+#vpo-parcours :is(.vpo-titre,.vpo-h2,.vpo-h3,.vpo-heure,.vpo-type,.vpo-mini,.vpo-pilule,.vpo-onglet,.vpo-filtre,.vpo-puce,.vpo-code,.vpo-prio,.vpo-carte,.vpo-lettre,.vpo-creneau,.vpo-btn,.vpo-compte,.vpo-chiffre,.vpo-cible,.vpo-rail button){font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 #vpo-parcours :is(a,button,input,label):focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 #vpo-parcours :is(input:focus-visible+.vpo-case){outline:3px solid var(--orange);outline-offset:2px}
 #vpo-parcours .vpo-rouge{color:var(--rouge)}
@@ -89,7 +90,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-texte{margin-top:8px;color:var(--texte-doux);font-size:15px}
 #vpo-parcours .vpo-alerte{display:flex;gap:10px;align-items:flex-start;margin-top:14px;padding:10px 14px;border-radius:14px;background:#FFF3D6;color:var(--ardoise-fonce);font-size:14px;line-height:1.45}
 #vpo-parcours .vpo-alerte::before{content:"";flex:none;width:8px;height:8px;margin-top:6px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(252,175,25,.25)}
-#vpo-parcours .vpo-encours{display:none;align-self:flex-start;margin-bottom:10px;padding:3px 10px;border-radius:999px;background:var(--vert);color:#fff;font-family:"Poppins",sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+#vpo-parcours .vpo-encours{display:none;align-self:flex-start;margin-bottom:10px;padding:3px 10px;border-radius:999px;background:#4E7A1A;color:#fff;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
 #vpo-parcours .vpo-maintenant .vpo-encours{display:inline-block}
 #vpo-parcours .vpo-diapo .vpo-btn{align-self:flex-start;margin-top:auto}
 #vpo-parcours .vpo-diapo .vpo-texte+.vpo-btn,#vpo-parcours .vpo-diapo .vpo-alerte+.vpo-btn{margin-top:18px}
@@ -126,7 +127,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours.vpo-une .vpo-allee:not(.vpo-allee--active){display:none}
 #vpo-parcours .vpo-allee-tete{display:flex;align-items:center;gap:10px;margin-bottom:4px}
 #vpo-parcours .vpo-lettre{flex:none;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#fff;color:var(--rouge);font-weight:800;font-size:15px;box-shadow:0 0 0 2px var(--rouge)}
-#vpo-parcours .vpo-allee-tete .vpo-h4{flex:1;min-width:0;font-family:"Poppins",sans-serif;font-size:17px;font-weight:800;color:var(--ardoise-fonce)}
+#vpo-parcours .vpo-allee-tete .vpo-h4{flex:1;min-width:0;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:17px;font-weight:800;color:var(--ardoise-fonce)}
 #vpo-parcours .vpo-creneau{flex:none;padding:4px 11px;border-radius:999px;background:var(--ardoise);color:#fff;font-size:12px;font-weight:700;line-height:1.3}
 #vpo-parcours .vpo-stand{border-top:1px solid var(--bord)}
 #vpo-parcours .vpo-allee-tete+.vpo-stand{border-top:0}
@@ -139,7 +140,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-stand input:checked+.vpo-case svg{opacity:1}
 #vpo-parcours .vpo-stand-txt{display:block;line-height:1.4}
 #vpo-parcours .vpo-code{display:inline-block;margin-right:6px;font-size:12.5px;font-weight:800;letter-spacing:.04em;color:var(--rouge)}
-#vpo-parcours .vpo-stand strong{font-family:"Poppins",sans-serif;color:var(--ardoise-fonce);font-size:15px}
+#vpo-parcours .vpo-stand strong{font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ardoise-fonce);font-size:15px}
 #vpo-parcours .vpo-stand-desc{display:block;margin-top:2px;font-size:13.5px;color:var(--texte-doux)}
 #vpo-parcours .vpo-pastilles{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
 #vpo-parcours :is(.vpo-prio,.vpo-carte){display:inline-block;padding:2px 9px;border-radius:999px;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.5}
@@ -155,7 +156,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-astuce{margin-top:10px;font-size:12.5px;color:var(--texte-doux);text-align:center}
 
 /* ———— 3. Cartes du podcast : registre des cartes données ———— */
-#vpo-parcours .vpo-compteur{flex:none;display:grid;justify-items:end;line-height:1.15;color:var(--ardoise-fonce);font-family:"Poppins",sans-serif;font-size:20px;font-weight:800}
+#vpo-parcours .vpo-compteur{flex:none;display:grid;justify-items:end;line-height:1.15;color:var(--ardoise-fonce);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:20px;font-weight:800}
 #vpo-parcours .vpo-compteur b{font-weight:800;color:var(--rouge)}
 #vpo-parcours .vpo-compteur small{font-size:11px;font-weight:700;color:var(--texte-doux)}
 #vpo-parcours .vpo-jauge-c{flex:none;margin:0 16px 10px}
@@ -188,13 +189,13 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-ct{display:flex;align-items:center;gap:6px;border-top:1px solid var(--bord)}
 #vpo-parcours .vpo-ct:first-child{border-top:0}
 #vpo-parcours .vpo-ct-corps{flex:1;min-width:0;display:flex;align-items:center;gap:12px;padding:10px 0;text-align:left}
-#vpo-parcours .vpo-ct-vignette{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--rose);color:var(--rouge);font-family:"Poppins",sans-serif;font-size:15px;font-weight:800;overflow:hidden}
+#vpo-parcours .vpo-ct-vignette{flex:none;display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--rose);color:var(--rouge);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;font-weight:800;overflow:hidden}
 #vpo-parcours .vpo-ct-vignette img{width:100%;height:100%;object-fit:cover}
 #vpo-parcours .vpo-ct-vignette svg{width:22px;height:22px}
 #vpo-parcours .vpo-ct-txt{min-width:0;line-height:1.3}
 #vpo-parcours .vpo-ct-txt :is(small,strong,.vpo-ct-l){display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-#vpo-parcours .vpo-ct-txt small{font-family:"Poppins",sans-serif;font-size:11.5px;font-weight:700;color:var(--rouge)}
-#vpo-parcours .vpo-ct-txt strong{font-family:"Poppins",sans-serif;font-size:15px;color:var(--ardoise-fonce)}
+#vpo-parcours .vpo-ct-txt small{font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:11.5px;font-weight:700;color:var(--rouge)}
+#vpo-parcours .vpo-ct-txt strong{font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:15px;color:var(--ardoise-fonce)}
 #vpo-parcours .vpo-ct-txt strong.vpo-vide{color:var(--texte-doux);font-weight:600}
 #vpo-parcours .vpo-ct-l{font-size:13px;color:var(--texte-doux)}
 #vpo-parcours .vpo-ct-act{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--gris);color:var(--ardoise-fonce)}
@@ -209,23 +210,23 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-donner:active{transform:scale(.9)}
 #vpo-parcours .vpo-donner svg{width:20px;height:20px}
 #vpo-parcours .vpo-donner.vpo-donne{background:var(--orange);color:var(--ardoise-fonce);box-shadow:none}
-#vpo-parcours .vpo-donner[data-n]::after{content:attr(data-n);position:absolute;top:-4px;right:-4px;min-width:17px;height:17px;padding:0 4px;border-radius:999px;background:var(--rouge);color:#fff;font:800 10px/17px "Poppins",sans-serif;text-align:center}
+#vpo-parcours .vpo-donner[data-n]::after{content:attr(data-n);position:absolute;top:-4px;right:-4px;min-width:17px;height:17px;padding:0 4px;border-radius:999px;background:var(--rouge);color:#fff;font:800 10px/17px "Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;text-align:center}
 #vpo-parcours .vpo-stand-contacts{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;padding:0 0 12px 42px}
 #vpo-parcours .vpo-stand-contacts:empty{display:none}
-#vpo-parcours .vpo-stand-contacts button{min-height:32px;padding:4px 12px;border-radius:999px;background:#FFF3D6;color:var(--ardoise-fonce);font-family:"Poppins",sans-serif;font-size:12.5px;font-weight:700}
+#vpo-parcours .vpo-stand-contacts button{min-height:32px;padding:4px 12px;border-radius:999px;background:#FFF3D6;color:var(--ardoise-fonce);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:12.5px;font-weight:700}
 
 /* ———— 4. Synthèses des conférences (Plaud) ———— */
 #vpo-parcours .vpo-plaud{margin:0 16px 12px;padding:12px 14px;border-radius:16px;background:var(--creme);font-size:13px;line-height:1.45;color:var(--ardoise-fonce)}
-#vpo-parcours .vpo-plaud summary{font-family:"Poppins",sans-serif;font-weight:700;cursor:pointer}
+#vpo-parcours .vpo-plaud summary{font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:700;cursor:pointer}
 #vpo-parcours .vpo-plaud ol{display:grid;gap:4px;margin-top:6px}
 #vpo-parcours .vpo-plaud li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:6px}
-#vpo-parcours .vpo-plaud li b{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--orange);font-family:"Poppins",sans-serif;font-size:11px}
+#vpo-parcours .vpo-plaud li b{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--orange);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:11px}
 #vpo-parcours .vpo-synths{padding:0 16px}
 #vpo-parcours .vpo-sy{display:flex;align-items:center;gap:12px;width:100%;padding:11px 0;border-top:1px solid var(--bord);text-align:left}
 #vpo-parcours .vpo-synths>li:first-child .vpo-sy{border-top:0}
-#vpo-parcours .vpo-sy-heure{flex:none;width:48px;font-family:"Poppins",sans-serif;font-size:14px;font-weight:800;color:var(--rouge)}
+#vpo-parcours .vpo-sy-heure{flex:none;width:48px;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:14px;font-weight:800;color:var(--rouge)}
 #vpo-parcours .vpo-sy-txt{flex:1;min-width:0;line-height:1.3}
-#vpo-parcours .vpo-sy-txt strong{display:block;font-family:"Poppins",sans-serif;font-size:14.5px;color:var(--ardoise-fonce)}
+#vpo-parcours .vpo-sy-txt strong{display:block;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:14.5px;color:var(--ardoise-fonce)}
 #vpo-parcours .vpo-sy-txt small{display:block;margin-top:2px;font-size:12.5px;color:var(--texte-doux);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #vpo-parcours .vpo-sy-etat{flex:none;display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--gris);color:var(--texte-doux)}
 #vpo-parcours .vpo-sy-etat svg{width:18px;height:18px}
@@ -234,7 +235,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-diapo .vpo-synth-slot .vpo-btn{margin-top:0}
 #vpo-parcours .vpo-apercu{display:block;width:100%;padding:12px 14px;border-radius:16px;background:#E8F4D6;text-align:left;font-size:13.5px;line-height:1.45;color:var(--ardoise-fonce)}
 #vpo-parcours .vpo-apercu .vpo-mini{margin-bottom:4px;color:#4E7A1A}
-#vpo-parcours .vpo-apercu b{display:block;margin-top:6px;font-family:"Poppins",sans-serif;font-size:13px;color:var(--rouge)}
+#vpo-parcours .vpo-apercu b{display:block;margin-top:6px;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:13px;color:var(--rouge)}
 #vpo-parcours .vpo-rail button.vpo-a-synth{box-shadow:inset 0 -3px 0 var(--vert)}
 
 /* ———— Volets : formulaires et lecture ———— */
@@ -252,8 +253,8 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-volet-pied{flex:none;display:flex;gap:8px;padding:10px 16px calc(12px + var(--bas-sur));border-top:1px solid var(--bord);background:#fff}
 #vpo-parcours .vpo-volet-pied .vpo-btn{flex:1 1 0;min-height:48px;padding:8px 10px}
 #vpo-parcours .vpo-champ{display:grid;gap:5px;min-width:0}
-#vpo-parcours .vpo-champ>span{font-family:"Poppins",sans-serif;font-size:12.5px;font-weight:700;color:var(--ardoise-fonce)}
-#vpo-parcours :is(.vpo-champ input,.vpo-champ select,.vpo-champ textarea,.vpo-recherche){width:100%;min-height:46px;margin:0;padding:10px 12px;border:1.5px solid var(--bord);border-radius:12px;background:var(--gris);color:var(--ardoise-fonce);font:16px/1.4 "Open Sans",sans-serif;-webkit-appearance:none;appearance:none}
+#vpo-parcours .vpo-champ>span{font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:12.5px;font-weight:700;color:var(--ardoise-fonce)}
+#vpo-parcours :is(.vpo-champ input,.vpo-champ select,.vpo-champ textarea,.vpo-recherche){width:100%;min-height:46px;margin:0;padding:10px 12px;border:1.5px solid var(--bord);border-radius:12px;background:var(--gris);color:var(--ardoise-fonce);font:16px/1.4 "Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-appearance:none;appearance:none}
 #vpo-parcours .vpo-champ select{padding-right:36px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2323384A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;background-size:18px}
 #vpo-parcours .vpo-champ textarea{min-height:92px;resize:vertical}
 #vpo-parcours .vpo-champ textarea[name="texte"]{min-height:200px}
@@ -264,13 +265,13 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-photo .vpo-btn{flex:1;min-width:0}
 #vpo-parcours .vpo-note{font-size:12.5px;line-height:1.45;color:var(--texte-doux)}
 #vpo-parcours .vpo-note strong{color:var(--ardoise-fonce)}
-#vpo-parcours .vpo-lien-mini{justify-self:start;font-family:"Poppins",sans-serif;font-size:13.5px;font-weight:700;color:var(--rouge);text-decoration:underline;text-underline-offset:3px}
+#vpo-parcours .vpo-lien-mini{justify-self:start;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:13.5px;font-weight:700;color:var(--rouge);text-decoration:underline;text-underline-offset:3px}
 #vpo-parcours .vpo-liste-btn{display:grid;gap:8px}
 #vpo-parcours .vpo-liste-btn .vpo-btn{justify-content:flex-start;width:100%;min-height:54px;padding:10px 16px;border-radius:16px;text-align:left}
-#vpo-parcours .vpo-liste-btn .vpo-btn small{display:block;margin-top:2px;font-family:"Open Sans",sans-serif;font-size:12px;font-weight:400;color:var(--texte-doux)}
+#vpo-parcours .vpo-liste-btn .vpo-btn small{display:block;margin-top:2px;font-family:"Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:12px;font-weight:400;color:var(--texte-doux)}
 #vpo-parcours .vpo-md{font-size:15px;line-height:1.6;color:var(--texte)}
 #vpo-parcours .vpo-md>*+*{margin-top:10px}
-#vpo-parcours .vpo-md :is(h3,h4){margin-top:18px;font-family:"Poppins",sans-serif;font-weight:800;line-height:1.3;color:var(--ardoise-fonce)}
+#vpo-parcours .vpo-md :is(h3,h4){margin-top:18px;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-weight:800;line-height:1.3;color:var(--ardoise-fonce)}
 #vpo-parcours .vpo-md>:first-child{margin-top:0}
 #vpo-parcours .vpo-md h3{font-size:17px}
 #vpo-parcours .vpo-md h4{font-size:15.5px}
@@ -279,7 +280,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-md ol>li{list-style:decimal}
 #vpo-parcours .vpo-md li+li{margin-top:4px}
 #vpo-parcours .vpo-md strong{color:var(--ardoise-fonce)}
-#vpo-parcours .vpo-toast{position:fixed;left:50%;bottom:calc(86px + var(--bas-sur));z-index:50;max-width:calc(100% - 32px);padding:10px 18px;border-radius:999px;background:var(--ardoise-fonce);color:#fff;font-family:"Poppins",sans-serif;font-size:13.5px;font-weight:700;line-height:1.3;text-align:center;box-shadow:var(--ombre);opacity:0;transform:translate(-50%,16px);pointer-events:none;transition:opacity .2s ease,transform .2s ease}
+#vpo-parcours .vpo-toast{position:fixed;left:50%;bottom:calc(86px + var(--bas-sur));z-index:50;max-width:calc(100% - 32px);padding:10px 18px;border-radius:999px;background:var(--ardoise-fonce);color:#fff;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:13.5px;font-weight:700;line-height:1.3;text-align:center;box-shadow:var(--ombre);opacity:0;transform:translate(-50%,16px);pointer-events:none;transition:opacity .2s ease,transform .2s ease}
 #vpo-parcours .vpo-toast.vpo-vu{opacity:1;transform:translate(-50%,0)}
 @media (max-width:370px){#vpo-parcours .vpo-deux-champs{grid-template-columns:1fr}}
 
@@ -288,14 +289,16 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-cible[aria-pressed="true"] .vpo-case svg{opacity:1}
 
 /* ———— 4. Questions ———— */
-#vpo-parcours .vpo-bandeau{position:relative;isolation:isolate;flex:1;display:flex;flex-direction:column;margin:12px 16px 16px;padding:22px 20px 26px;border-radius:26px;background:var(--ardoise);color:#C9D4DC;overflow:hidden}
+#vpo-parcours #vpo-vue-questions{overflow-y:auto}
+#vpo-parcours .vpo-bandeau{position:relative;isolation:isolate;flex:1 0 auto;display:flex;flex-direction:column;margin:12px 16px 16px;padding:22px 20px 26px;border-radius:26px;background:var(--ardoise);color:#C9D4DC;overflow:hidden}
 #vpo-parcours .vpo-bandeau .vpo-feuille{position:absolute;right:-34px;top:-14px;width:130px;height:auto;aspect-ratio:740/495;opacity:.9;z-index:-1;pointer-events:none}
 #vpo-parcours .vpo-bandeau .vpo-mini{color:var(--orange)}
 #vpo-parcours .vpo-bandeau .vpo-h2{margin-top:6px;color:#fff}
 #vpo-parcours .vpo-bandeau .vpo-lead{margin-top:6px;font-size:14.5px}
-#vpo-parcours .vpo-question{flex:1;display:flex;flex-direction:column;justify-content:center;min-height:170px;padding:12px 0}
-#vpo-parcours .vpo-chiffre{display:block;font-size:44px;font-weight:800;line-height:1;color:var(--orange)}
-#vpo-parcours .vpo-question strong{display:block;margin-top:10px;font-family:"Poppins",sans-serif;font-size:21px;line-height:1.3;color:#fff;letter-spacing:-.01em;animation:vpo-entree .3s ease}
+#vpo-parcours .vpo-question{display:grid;gap:16px;padding:18px 0 4px}
+#vpo-parcours .vpo-question>li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start}
+#vpo-parcours .vpo-chiffre{display:block;font-size:30px;font-weight:800;line-height:1;color:var(--orange)}
+#vpo-parcours .vpo-question strong{display:block;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:18px;line-height:1.3;color:#fff;letter-spacing:-.01em}
 #vpo-parcours .vpo-bandeau .vpo-pas{padding:0}
 #vpo-parcours .vpo-bandeau .vpo-rond{background:rgba(255,255,255,.12);color:#fff}
 #vpo-parcours .vpo-bandeau .vpo-points span{background:rgba(255,255,255,.3)}
@@ -313,6 +316,22 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 #vpo-parcours .vpo-onglet[aria-selected="true"]::before{content:"";position:absolute;top:-6px;left:30%;right:30%;height:3px;border-radius:0 0 3px 3px;background:var(--rouge)}
 #vpo-parcours .vpo-badge{position:absolute;top:2px;left:calc(50% + 6px);min-width:18px;height:18px;padding:0 5px;border-radius:999px;background:var(--orange);color:var(--ardoise-fonce);font-size:10.5px;font-weight:800;line-height:18px;text-align:center}
 
+/* ———— Repères horaires, sauvegarde, formulaires (lot du 5 octobre) ———— */
+#vpo-parcours .vpo-haut-txt{text-align:left;color:inherit;cursor:pointer}
+#vpo-parcours .vpo-sous.vpo-ensuite{color:#fff;font-weight:600}
+#vpo-parcours .vpo-sous.vpo-proche{color:var(--orange);font-weight:700}
+#vpo-parcours .vpo-fin{display:flex;align-items:center;gap:10px;margin:0 16px 8px;padding:10px 12px;border-radius:16px;background:#FFF3D6;color:var(--ardoise-fonce);font-size:13px;line-height:1.35}
+#vpo-parcours .vpo-fin>span{flex:1;min-width:0}
+#vpo-parcours .vpo-fin .vpo-btn{flex:none;min-height:44px;padding:8px 14px;font-size:13px}
+#vpo-parcours .vpo-etat-sauv{font-size:13px;line-height:1.4;color:var(--texte-doux)}
+#vpo-parcours .vpo-etat-sauv.vpo-alerte-sauv{color:var(--rouge);font-weight:700}
+#vpo-parcours .vpo-actions-bas .vpo-etat-sauv{flex:1 0 100%;text-align:center}
+#vpo-parcours .vpo-intertitre{margin-top:6px;font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--texte-doux)}
+#vpo-parcours .vpo-liste-btn .vpo-btn:not(.vpo-btn--clair) small{color:#FBD5D7}
+#vpo-parcours .vpo-badge.vpo-badge--alerte{background:var(--rouge);color:#fff}
+#vpo-parcours button[type="submit"]:disabled{opacity:.55;cursor:progress}
+@media (max-width:340px){#vpo-parcours .vpo-onglet{font-size:10px}}
+
 @media (min-width:561px){
  #vpo-parcours{height:calc(100dvh - 32px);margin:16px auto;border-radius:28px;box-shadow:0 30px 60px -30px rgba(35,56,74,.45)}
 }
@@ -320,7 +339,6 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
  #vpo-parcours .vpo-heure{font-size:24px}
  #vpo-parcours .vpo-h3{font-size:18px}
  #vpo-parcours .vpo-diapo{padding:16px}
- #vpo-parcours .vpo-question{min-height:120px}
 }
 @media (prefers-reduced-motion:reduce){
  #vpo-parcours *,#vpo-parcours *::before,#vpo-parcours *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
@@ -330,7 +348,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <!-- En-tête -->
 <header class="vpo-haut">
 <svg class="vpo-logo" viewBox="0 0 740 495" aria-hidden="true" focusable="false"><use href="#vpo-feuille-sym"/></svg>
-<p class="vpo-haut-txt"><span class="vpo-titre" id="vpo-titre">Préventica Lyon</span><span class="vpo-sous">Eurexpo · mardi 6 octobre · AT/MP</span></p>
+<button type="button" class="vpo-haut-txt" id="vpo-haut-btn"><span class="vpo-titre" id="vpo-titre">Préventica Lyon</span><span class="vpo-sous" id="vpo-sous">Eurexpo · mardi 6 octobre · AT/MP</span></button>
 <button type="button" class="vpo-pilule" data-aller-vue="stands" aria-label="Stands vus"><svg class="vpo-anneau" viewBox="0 0 24 24" aria-hidden="true"><circle class="vpo-fond" cx="12" cy="12" r="9.5"/><circle class="vpo-plein" id="vpo-anneau" cx="12" cy="12" r="9.5" stroke-dasharray="59.7" stroke-dashoffset="59.7"/></svg><span><span id="vpo-vus-haut">0</span>/<span id="vpo-total-haut">53</span></span></button>
 </header>
 
@@ -340,8 +358,9 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <section class="vpo-vue" id="vpo-vue-programme" role="tabpanel" aria-labelledby="vpo-o-programme">
 <div class="vpo-tete"><div><span class="vpo-mini">Mardi 6 octobre</span><h2 class="vpo-h2">Le déroulé <span class="vpo-rouge">de la journée</span></h2></div><button type="button" class="vpo-btn" id="vpo-btn-maintenant" hidden>Maintenant</button></div>
 <div class="vpo-rail" id="vpo-rail" aria-label="Créneaux"></div>
+<div class="vpo-fin" id="vpo-fin" hidden><span id="vpo-fin-txt"></span><button type="button" class="vpo-btn" data-sauvegarder>Sauvegarder tout</button></div>
 <ol class="vpo-carrousel" id="vpo-carrousel" aria-label="Programme, faire glisser pour changer de créneau">
-<li class="vpo-temps--stands" data-debut="09:00" data-fin="09:45" data-court="Ouverture"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">Ouverture</span><p class="vpo-lieu"><span class="vpo-type">Stands</span><span class="vpo-mini">Allées A à C</span></p><h3 class="vpo-h3">Handicap, reconversion, élus CSE</h3><p class="vpo-texte">Agefiph, ATHA, Work2Care, Transitions Pro, WeChooz, Responsage. Laisser la carte.</p><button type="button" class="vpo-btn" data-aller-allee="A">Stands de l’allée A →</button></div></li>
+<li class="vpo-temps--stands" data-debut="09:00" data-fin="09:45" data-court="Ouverture"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">9h00 – 9h45</span><p class="vpo-lieu"><span class="vpo-type">Stands</span><span class="vpo-mini">Ouverture · Allées A à C</span></p><h3 class="vpo-h3">Handicap, reconversion, élus CSE</h3><p class="vpo-texte">Agefiph, ATHA, Work2Care, Transitions Pro, WeChooz, Responsage. Laisser la carte.</p><button type="button" class="vpo-btn" data-aller-allee="A">Stands de l’allée A →</button></div></li>
 <li data-debut="09:45" data-fin="10:15" data-court="9h45"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">9h45 – 10h15</span><p class="vpo-lieu"><span class="vpo-type">Atelier</span><span class="vpo-mini">Atelier Solution 3</span></p><h3 class="vpo-h3">Sécuriser les opérateurs lors du travail en hauteur</h3><p class="vpo-texte">Tubesca-Comabi. Réglementation, plateformes individuelles roulantes, PEMP et échafaudages.</p><p class="vpo-alerte"><span><strong>Même horaire, Atelier Solution 2&nbsp;:</strong> BE Safety sur le nouveau règlement machine.</span></p></div></li>
 <li class="vpo-temps--stands" data-debut="10:15" data-fin="10:45" data-court="10h15"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">10h15 – 10h45</span><p class="vpo-lieu"><span class="vpo-type">Stands</span><span class="vpo-mini">Allée Q</span></p><h3 class="vpo-h3">Prevor (Q21) et Preventi Chimie (Q32e)</h3><p class="vpo-texte">L’atelier Prevor sur les projections chimiques (10h) tombe en même temps que Tubesca.</p><button type="button" class="vpo-btn" data-aller-allee="Q">Stands de l’allée Q →</button></div></li>
 <li data-debut="10:45" data-fin="11:30" data-court="10h45"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">10h45 – 11h30</span><p class="vpo-lieu"><span class="vpo-type">Conférence</span><span class="vpo-mini">Salle A</span></p><h3 class="vpo-h3">Le PPSPS, outil de prévention des risques sur les chantiers</h3><p class="vpo-texte">OPPBTP.</p><p class="vpo-alerte"><span><strong>Même horaire, salle F&nbsp;:</strong> la DREETS sur la silice, les CMR et la qualité de l’air.</span></p></div></li>
@@ -349,7 +368,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <li class="vpo-temps--option" data-debut="12:00" data-fin="12:30" data-court="12h00"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">12h00 – 12h30</span><p class="vpo-lieu"><span class="vpo-type">En option</span><span class="vpo-mini">Atelier Solution 3</span></p><h3 class="vpo-h3">Veille réglementaire en santé-sécurité</h3><p class="vpo-texte">Lefebvre Dalloz. En même temps que la fin du UX-Forum.</p></div></li>
 <li class="vpo-temps--stands" data-debut="12:15" data-fin="14:00" data-court="12h15"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">12h15 – 14h00</span><p class="vpo-lieu"><span class="vpo-type">Stands</span><span class="vpo-mini">Allées I à N</span></p><h3 class="vpo-h3">Chutes, machines et engins, chimie, syndicats</h3><p class="vpo-texte">Dont BE Safety (N18) et les syndicats, à qui laisser la carte.</p><button type="button" class="vpo-btn" data-aller-allee="I">Stands de l’allée I →</button></div></li>
 <li data-debut="14:00" data-fin="15:00" data-court="14h00"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">14h00 – 15h00</span><p class="vpo-lieu"><span class="vpo-type">Conférence</span><span class="vpo-mini">Salle plénière</span></p><h3 class="vpo-h3">Santé au travail, de l’usage du droit en pratique</h3><p class="vpo-texte">Rencontre d’auteurs. Laisser la carte aux intervenants. Filmée, replay sur preventica.com (rubrique webinars).</p><p class="vpo-alerte"><span><strong>Option à 14h30, atelier participatif&nbsp;:</strong> l’arrêt de travail et le retour durable. La plénière se revoit en replay.</span></p></div></li>
-<li data-debut="15:00" data-fin="15:45" data-court="15h00"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">15h00 – 15h45</span><p class="vpo-lieu"><span class="vpo-type">Conférence</span><span class="vpo-mini">Salle F</span></p><h3 class="vpo-h3">La gestion du risque batteries lithium</h3><p class="vpo-texte">Asecos.</p></div></li>
+<li data-debut="15:00" data-fin="15:45" data-court="15h00" data-plan="non"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">15h00 – 15h45</span><p class="vpo-lieu"><span class="vpo-type">Conférence</span><span class="vpo-mini">Salle F</span></p><h3 class="vpo-h3">La gestion du risque batteries lithium</h3><p class="vpo-texte">Asecos.</p><p class="vpo-alerte"><span><strong>Plan&nbsp;:</strong> plutôt Ingénium à 15h15, Atelier Solution 2. Asecos se voit au stand M10 à midi.</span></p></div></li>
 <li data-debut="15:15" data-fin="15:45" data-court="15h15"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">15h15 – 15h45</span><p class="vpo-lieu"><span class="vpo-type">Atelier</span><span class="vpo-mini">Atelier Solution 2</span></p><h3 class="vpo-h3">Motorisation des antichutes pour les travaux en hauteur</h3><p class="vpo-texte">Ingénium 360.</p><p class="vpo-alerte"><span><strong>En même temps qu’Asecos.</strong> Plutôt Ingénium, et passer voir Asecos au stand M10 à midi.</span></p></div></li>
 <li data-debut="16:00" data-fin="16:45" data-court="16h00"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">16h00 – 16h45</span><p class="vpo-lieu"><span class="vpo-type">Conférence</span><span class="vpo-mini">Salle F</span></p><h3 class="vpo-h3">L’impact de la réglementation sur l’évaluation des risques</h3><p class="vpo-alerte"><span>Sortir à 16h30 pour la salle G.</span></p></div></li>
 <li data-debut="16:30" data-fin="17:15" data-court="16h30"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">16h30 – 17h15</span><p class="vpo-lieu"><span class="vpo-type">Conférence</span><span class="vpo-mini">Salle G</span></p><h3 class="vpo-h3">La déclaration en accident du travail d’une lésion psychique</h3><p class="vpo-texte">Réseau européen des consultations Souffrance et Travail. Laisser la carte aux intervenants.</p></div></li>
@@ -518,7 +537,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <input type="search" class="vpo-recherche" id="vpo-recherche" placeholder="Rechercher un nom, une société…" aria-label="Rechercher un interlocuteur" autocomplete="off" hidden>
 <ul class="vpo-contacts" id="vpo-contacts"></ul>
 <p class="vpo-vide-liste" id="vpo-contacts-vide">Aucune carte donnée pour l’instant. Touchez <strong>Carte donnée</strong>, ou l’icône carte à côté d’un stand.</p>
-<div class="vpo-actions-bas"><button type="button" class="vpo-btn vpo-btn--clair" data-ouvrir-export>Exporter les contacts</button><button type="button" class="vpo-btn vpo-btn--clair" data-aller-filtre="carte">Voir sur le parcours</button></div>
+<div class="vpo-actions-bas"><button type="button" class="vpo-btn vpo-btn--clair" data-ouvrir-export>Exporter et sauvegarder</button><button type="button" class="vpo-btn vpo-btn--clair" data-aller-filtre="carte">Voir sur le parcours</button><p class="vpo-etat-sauv" data-etat-sauv></p></div>
 </div>
 </section>
 
@@ -528,7 +547,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <div class="vpo-defile">
 <details class="vpo-plaud" id="vpo-plaud" open><summary>Mode d’emploi</summary><ol><li><b>1</b><span>Lancer l’enregistrement Plaud en entrant dans la salle.</span></li><li><b>2</b><span>Après la conférence, dans l’app Plaud, copier le résumé (ou l’exporter en texte).</span></li><li><b>3</b><span>Toucher la conférence ci-dessous et coller le résumé.</span></li></ol></details>
 <ul class="vpo-synths" id="vpo-synths"></ul>
-<div class="vpo-actions-bas"><button type="button" class="vpo-btn vpo-btn--clair" id="vpo-synth-autre">Autre conférence</button><button type="button" class="vpo-btn vpo-btn--clair" id="vpo-synth-export">Exporter les synthèses</button></div>
+<div class="vpo-actions-bas"><button type="button" class="vpo-btn vpo-btn--clair" id="vpo-synth-autre">Autre conférence</button><button type="button" class="vpo-btn vpo-btn--clair" data-ouvrir-export>Exporter et sauvegarder</button><p class="vpo-etat-sauv" data-etat-sauv></p></div>
 </div>
 </section>
 
@@ -539,16 +558,11 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <span class="vpo-mini">Sur les stands</span>
 <h2 class="vpo-h2">Questions <span class="vpo-orange">à poser</span></h2>
 <p class="vpo-lead">Pour dater ce qui existait au moment des faits, et savoir quels documents l’employeur doit pouvoir produire.</p>
-<ol class="vpo-question" id="vpo-question" aria-live="polite">
+<ol class="vpo-question" id="vpo-question">
 <li data-q="1"><span class="vpo-chiffre">01</span><strong>Depuis quand ce produit est-il sur le marché&nbsp;?</strong></li>
-<li data-q="2" hidden><span class="vpo-chiffre">02</span><strong>Quels contrôles et quels registres l’entreprise doit-elle tenir&nbsp;?</strong></li>
-<li data-q="3" hidden><span class="vpo-chiffre">03</span><strong>Quelles normes ou recommandations INRS s’appliquent&nbsp;?</strong></li>
+<li data-q="2"><span class="vpo-chiffre">02</span><strong>Quels contrôles et quels registres l’entreprise doit-elle tenir&nbsp;?</strong></li>
+<li data-q="3"><span class="vpo-chiffre">03</span><strong>Quelles normes ou recommandations INRS s’appliquent&nbsp;?</strong></li>
 </ol>
-<div class="vpo-pas">
-<button type="button" class="vpo-rond" id="vpo-q-prec" aria-label="Question précédente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
-<div class="vpo-points" id="vpo-q-points" aria-hidden="true"><span class="vpo-actif"></span><span></span><span></span></div>
-<button type="button" class="vpo-rond" id="vpo-q-suiv" aria-label="Question suivante"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
-</div>
 <div class="vpo-lisere" aria-hidden="true"></div>
 </div>
 <p class="vpo-pied">D’après le catalogue des exposants et le programme du mardi.</p>
@@ -571,16 +585,16 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <div class="vpo-volet-tete"><div><span class="vpo-mini">Carte du podcast</span><h2 class="vpo-h2" id="vpo-vc-titre">Carte donnée</h2></div><button type="button" class="vpo-fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
 <div class="vpo-volet-corps">
 <label class="vpo-champ"><span>Où&nbsp;?</span><select name="lieu" id="vpo-c-lieu"></select></label>
-<label class="vpo-champ" id="vpo-c-libre-champ" hidden><span>Préciser le lieu</span><input name="libre" autocomplete="off" placeholder="Stand, allée, salle…"></label>
+<label class="vpo-champ" id="vpo-c-libre-champ" hidden><span>Préciser le lieu</span><input name="libre" enterkeyhint="next" autocomplete="off" placeholder="Stand, allée, salle…"></label>
 <div class="vpo-photo">
 <img id="vpo-c-photo-img" alt="Carte de visite photographiée" hidden>
 <button type="button" class="vpo-btn vpo-btn--clair" id="vpo-c-photo-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2l1.5-2h6l1.5 2h2A1.5 1.5 0 0 1 20 8.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 17.5z"/><circle cx="12" cy="12.5" r="3.5"/></svg><span id="vpo-c-photo-txt">Photographier sa carte de visite</span></button>
 <button type="button" class="vpo-fermer" id="vpo-c-photo-suppr" aria-label="Retirer la photo" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
 <input type="file" id="vpo-c-photo" accept="image/*" capture="environment" hidden>
 </div>
-<label class="vpo-champ"><span>Interlocuteur</span><input name="nom" autocomplete="off" autocapitalize="words" placeholder="Prénom Nom"></label>
-<div class="vpo-deux-champs"><label class="vpo-champ"><span>Fonction</span><input name="fonction" autocomplete="off"></label><label class="vpo-champ"><span>Société</span><input name="societe" autocomplete="off"></label></div>
-<div class="vpo-deux-champs"><label class="vpo-champ"><span>Téléphone</span><input name="tel" type="tel" inputmode="tel" autocomplete="off"></label><label class="vpo-champ"><span>E-mail</span><input name="email" type="email" inputmode="email" autocomplete="off" autocapitalize="off" spellcheck="false"></label></div>
+<label class="vpo-champ"><span>Interlocuteur</span><input name="nom" enterkeyhint="next" autocomplete="off" autocapitalize="words" placeholder="Prénom Nom"></label>
+<div class="vpo-deux-champs"><label class="vpo-champ"><span>Fonction</span><input name="fonction" enterkeyhint="next" autocomplete="off"></label><label class="vpo-champ"><span>Société</span><input name="societe" enterkeyhint="next" autocomplete="off"></label></div>
+<div class="vpo-deux-champs"><label class="vpo-champ"><span>Téléphone</span><input name="tel" enterkeyhint="next" type="tel" inputmode="tel" autocomplete="off"></label><label class="vpo-champ"><span>E-mail</span><input name="email" enterkeyhint="next" type="email" inputmode="email" autocomplete="off" autocapitalize="off" spellcheck="false"></label></div>
 <label class="vpo-champ"><span>Note</span><textarea name="note" rows="3" placeholder="Sujet abordé, suite à donner…"></textarea></label>
 <p class="vpo-note" id="vpo-c-date" hidden></p>
 <button type="button" class="vpo-lien-mini" id="vpo-c-vcard" hidden>Ajouter à mes contacts (vCard)</button>
@@ -594,7 +608,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <form id="vpo-form-synth" novalidate>
 <div class="vpo-volet-tete"><div><span class="vpo-mini" id="vpo-vs-heure">Synthèse Plaud</span><h2 class="vpo-h2" id="vpo-vs-titre">Autre conférence</h2></div><button type="button" class="vpo-fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
 <div class="vpo-volet-corps">
-<label class="vpo-champ" id="vpo-vs-titre-champ" hidden><span>Conférence</span><input name="titre" list="vpo-autres-confs" autocomplete="off" placeholder="Titre, heure, salle"></label>
+<label class="vpo-champ" id="vpo-vs-titre-champ" hidden><span>Conférence</span><input name="titre" enterkeyhint="next" list="vpo-autres-confs" autocomplete="off" placeholder="Titre, heure, salle"></label>
 <datalist id="vpo-autres-confs"><option value="Le nouveau règlement machine, BE Safety (9h45, Atelier Solution 2)"><option value="Silice, CMR et qualité de l’air, DREETS (10h45, salle F)"><option value="L’arrêt de travail et le retour durable (14h30, atelier participatif)"><option value="MASE Rhône-Alpes (15h30, salle B)"></datalist>
 <div class="vpo-deux-champs">
 <button type="button" class="vpo-btn vpo-btn--clair" id="vpo-vs-coller"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="4.5" width="12" height="16" rx="2"/><path d="M9.5 3h5v3h-5zM9 11h6M9 15h4"/></svg>Coller</button>
@@ -602,7 +616,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 </div>
 <input type="file" id="vpo-vs-fichier" accept=".txt,.md,.markdown,text/plain,text/markdown" hidden>
 <label class="vpo-champ"><span>Synthèse</span><textarea name="texte" rows="10" placeholder="Collez ici le résumé produit par Plaud…"></textarea></label>
-<label class="vpo-champ"><span>Lien de partage Plaud (facultatif)</span><input name="lien" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://…"></label>
+<label class="vpo-champ"><span>Lien de partage Plaud (facultatif)</span><input name="lien" enterkeyhint="done" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://…"></label>
 <p class="vpo-note">Texte brut ou Markdown (titres, listes, gras). Fichiers acceptés&nbsp;: TXT et Markdown.</p>
 </div>
 <div class="vpo-volet-pied"><button type="button" class="vpo-btn vpo-btn--clair" id="vpo-vs-suppr" hidden>Supprimer</button><button type="submit" class="vpo-btn">Enregistrer</button></div>
@@ -620,16 +634,23 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 <dialog class="vpo-volet" id="vpo-volet-export" aria-labelledby="vpo-ve-titre">
 <div class="vpo-volet-tete"><div><span class="vpo-mini">Données</span><h2 class="vpo-h2" id="vpo-ve-titre">Exporter et sauvegarder</h2></div><button type="button" class="vpo-fermer" data-fermer aria-label="Fermer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
 <div class="vpo-volet-corps">
-<label class="vpo-champ"><span>Cartes emportées</span><input type="number" id="vpo-stock-in" min="1" max="999" inputmode="numeric"></label>
-<p class="vpo-note"><strong>Tout reste sur ce téléphone, dans ce navigateur.</strong> Exportez les contacts et faites une sauvegarde complète à la fin de la journée.</p>
+<p class="vpo-etat-sauv" data-etat-sauv></p>
+<div class="vpo-liste-btn"><button type="button" class="vpo-btn" id="vpo-ex-json" data-sauvegarder><span>Sauvegarde complète<small>Stands vus, contacts, photos et synthèses, dans un seul fichier</small></span></button></div>
+<p class="vpo-note"><strong>Tout reste sur ce téléphone, dans ce navigateur.</strong> Faites une sauvegarde complète à la fin de la journée et gardez le fichier (Fichiers, e-mail…).</p>
+<h3 class="vpo-intertitre">Exporter</h3>
 <div class="vpo-liste-btn">
 <button type="button" class="vpo-btn vpo-btn--clair" id="vpo-ex-csv"><span>Contacts pour Excel<small>Fichier CSV, une ligne par carte donnée</small></span></button>
 <button type="button" class="vpo-btn vpo-btn--clair" id="vpo-ex-vcf"><span>Contacts pour le carnet d’adresses<small>Fichier vCard</small></span></button>
 <button type="button" class="vpo-btn vpo-btn--clair" id="vpo-ex-md"><span>Synthèses des conférences<small>Fichier texte (Markdown)</small></span></button>
-<button type="button" class="vpo-btn vpo-btn--clair" id="vpo-ex-json"><span>Sauvegarde complète<small>Stands vus, contacts, photos et synthèses</small></span></button>
+</div>
+<h3 class="vpo-intertitre">Autre téléphone</h3>
+<div class="vpo-liste-btn">
 <button type="button" class="vpo-btn vpo-btn--clair" id="vpo-ex-restaurer"><span>Restaurer une sauvegarde<small>Remplace les données de ce téléphone</small></span></button>
 <input type="file" id="vpo-ex-fichier" accept=".json,application/json" hidden>
 </div>
+<h3 class="vpo-intertitre">Réglages</h3>
+<label class="vpo-champ"><span>Cartes emportées</span><input type="number" id="vpo-stock-in" min="1" max="999" inputmode="numeric" enterkeyhint="done"></label>
+<p class="vpo-note" id="vpo-hors-ligne"></p>
 </div>
 </dialog>
 
@@ -661,7 +682,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     if(nom==='stands'){var b=boutonsPuces[allee];if(b)puces.scrollLeft=b.offsetLeft-puces.clientWidth/2+b.offsetWidth/2;}
   }
   onglets.forEach(function(o,i){
-    o.addEventListener('click',function(){montrerVue(o.getAttribute('data-vue'));});
+    o.addEventListener('click',function(){var v=o.getAttribute('data-vue');if(v==='programme'&&vueActive==='programme'&&allerMaintenant(true))return;montrerVue(v);});
     o.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;var n=onglets[(i+d+onglets.length)%onglets.length];n.focus();n.click();});
   });
   $$('[data-aller-vue]').forEach(function(b){b.addEventListener('click',function(){montrerVue(b.getAttribute('data-aller-vue'));});});
@@ -700,24 +721,65 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
   $('#vpo-suiv').addEventListener('click',function(){allerDiapo(indexDiapo+1,true);});
   window.addEventListener('resize',function(){if(vueActive==='programme')allerDiapo(indexDiapo,false);});
 
-  /* Créneau en cours, le jour du salon */
+  /* Créneau en cours ou suivant, le jour du salon. ?simuler=2026-10-06T15:50 dans l'adresse fixe l'heure pour essayer. */
   function minutes(t){var p=t.split(':');return +p[0]*60+ +p[1];}
-  function creneauActuel(){
-    var d=new Date();
-    if(d.getFullYear()!==2026||d.getMonth()!==9||d.getDate()!==6)return -1;
-    var m=d.getHours()*60+d.getMinutes(),trouve=-1;
+  function hCourte(t){var p=t.split(':');return (+p[0])+'h'+p[1];}
+  var decalage=0;
+  (function(){var m=/[?&]simuler=([^&#]+)/.exec(window.location.search);if(!m)return;var d=new Date(decodeURIComponent(m[1]));if(!isNaN(d))decalage=d.getTime()-Date.now();})();
+  function horloge(){return new Date(Date.now()+decalage);}
+  function jourJ(d){return d.getFullYear()===2026&&d.getMonth()===9&&d.getDate()===6;}
+  function apresSalon(d){return d.getTime()>new Date(2026,9,6,23,59).getTime();}
+  function principal(li){return !li.classList.contains('vpo-temps--option')&&li.getAttribute('data-plan')!=='non';}
+  function duree(n){return n<60?n+'\u00a0min':Math.floor(n/60)+'\u00a0h'+(n%60?'\u00a0'+('0'+n%60).slice(-2):'');}
+  function etatJournee(){
+    var d=horloge();if(!jourJ(d))return null;
+    var m=d.getHours()*60+d.getMinutes(),enCours=[],suivant=-1;
     diapos.forEach(function(li,i){
-      var en=m>=minutes(li.getAttribute('data-debut'))&&m<minutes(li.getAttribute('data-fin'));
-      li.classList.toggle('vpo-maintenant',en);boutonsRail[i].classList.toggle('vpo-maintenant',en);
-      if(en)trouve=i;
+      var a=minutes(li.getAttribute('data-debut')),b=minutes(li.getAttribute('data-fin'));
+      if(m>=a&&m<b)enCours.push(i);
+      if(a>m&&suivant<0&&principal(li))suivant=i;
     });
-    if(trouve<0){trouve=m<minutes(diapos[0].getAttribute('data-debut'))?0:diapos.length-1;}
-    return trouve;
+    var pref=enCours.filter(function(i){return principal(diapos[i]);}),liste=pref.length?pref:enCours,choisi=liste.length?liste[liste.length-1]:-1;
+    var commence=choisi>=0;
+    if(!commence)choisi=suivant>=0?suivant:(m<minutes(diapos[0].getAttribute('data-debut'))?0:diapos.length-1);
+    return {m:m,choisi:choisi,commence:commence,suivant:suivant};
+  }
+  function creneauActuel(){
+    var e=etatJournee();
+    diapos.forEach(function(li,i){
+      var on=!!e&&i===e.choisi&&(e.commence||i===e.suivant);
+      li.classList.toggle('vpo-maintenant',on);boutonsRail[i].classList.toggle('vpo-maintenant',on);
+      if(on)$('.vpo-encours',li).textContent=e.commence?'En cours':'Dans '+duree(minutes(li.getAttribute('data-debut'))-e.m);
+    });
+    return e?e.choisi:-1;
+  }
+  var sous=$('#vpo-sous'),SOUS_DEFAUT=sous.textContent;
+  function majEnsuite(){
+    var e=etatJournee();
+    sous.classList.remove('vpo-proche','vpo-ensuite');
+    if(!e){sous.textContent=SOUS_DEFAUT;return;}
+    sous.classList.add('vpo-ensuite');
+    if(e.suivant<0){sous.textContent=e.commence?'Dernier créneau de la journée':'Programme terminé · pensez à sauvegarder';return;}
+    var li=diapos[e.suivant],reste=minutes(li.getAttribute('data-debut'))-e.m;
+    sous.textContent='Ensuite '+hCourte(li.getAttribute('data-debut'))+' · '+$('.vpo-lieu .vpo-mini',li).textContent.replace(/^Ouverture · /,'')+' · '+duree(reste);
+    sous.classList.toggle('vpo-proche',reste<=10);
   }
   var btnMaintenant=$('#vpo-btn-maintenant');
-  btnMaintenant.addEventListener('click',function(){var i=creneauActuel();if(i>=0)allerDiapo(i,true);});
-  function rafraichirHeure(){btnMaintenant.hidden=creneauActuel()<0;}
-  setInterval(rafraichirHeure,60000);
+  function allerMaintenant(anime){var i=creneauActuel();if(i<0)return false;montrerVue('programme');allerDiapo(i,anime);return true;}
+  btnMaintenant.addEventListener('click',function(){allerMaintenant(true);});
+  $('#vpo-haut-btn').addEventListener('click',function(){if(!allerMaintenant(true))montrerVue('programme');});
+  function rafraichirHeure(){btnMaintenant.hidden=creneauActuel()<0;majEnsuite();if(typeof majSauvegarde==='function')majSauvegarde();}
+  setInterval(rafraichirHeure,30000);
+  /* Au retour dans l'app après plus de 10 minutes : revenir au créneau en cours */
+  var derniereAction=Date.now();
+  ['pointerdown','keydown'].forEach(function(ev){document.addEventListener(ev,function(){derniereAction=Date.now();},{capture:true,passive:true});});
+  function auRetour(){
+    rafraichirHeure();
+    if(Date.now()-derniereAction<600000||racine.querySelector('dialog[open]'))return;
+    derniereAction=Date.now();allerMaintenant(false);
+  }
+  document.addEventListener('visibilitychange',function(){if(document.visibilityState==='visible')auRetour();});
+  window.addEventListener('pageshow',function(e){if(e.persisted)auRetour();});
 
   /* ——— Stands : cases cochées, filtres, allée par allée ——— */
   var cases=$$('.vpo-stand input[type="checkbox"]'),allees=$$('.vpo-allee'),puces=$('#vpo-puces'),suite=$('#vpo-suite'),defile=$('#vpo-defile-stands');
@@ -785,7 +847,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
   }
   cases.forEach(function(c){
     if(etat[c.value])c.checked=true;
-    c.addEventListener('change',function(){etat[c.value]=c.checked;ecrire(CLE,etat);majStands();if(c.checked)vibrer();});
+    c.addEventListener('change',function(){etat[c.value]=c.checked;ecrire(CLE,etat);noterModif();majStands();if(c.checked)vibrer();});
   });
   var filtres=$$('.vpo-filtre');
   function choisirFiltre(f){
@@ -824,22 +886,41 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
   function ouvrir(d){if(typeof d.showModal==='function'){if(!d.open)d.showModal();}else d.setAttribute('open','');}
   function fermer(d){if(typeof d.close==='function'){if(d.open)d.close();}else d.removeAttribute('open');}
   function fermerTous(){$$('.vpo-volet').forEach(fermer);}
+  /* Un volet de saisie modifié ne se ferme qu'après confirmation (fond, croix, Échap, retour) */
+  function empreinte(form){return Array.prototype.map.call(form.elements,function(el){return el.name?el.name+'='+el.value:'';}).join('|');}
+  function demanderFermeture(d){
+    if(d.vpoModifie&&d.vpoModifie()&&!window.confirm('Abandonner la saisie en cours ?'))return false;
+    fermer(d);return true;
+  }
   $$('.vpo-volet').forEach(function(d){
-    d.addEventListener('click',function(e){if(e.target===d)fermer(d);});
-    $$('[data-fermer]',d).forEach(function(b){b.addEventListener('click',function(){fermer(d);});});
+    d.addEventListener('click',function(e){if(e.target===d)demanderFermeture(d);});
+    d.addEventListener('cancel',function(e){if(d.vpoModifie&&d.vpoModifie()&&!window.confirm('Abandonner la saisie en cours ?'))e.preventDefault();});
+    $$('[data-fermer]',d).forEach(function(b){b.addEventListener('click',function(){demanderFermeture(d);});});
   });
+  /* Touche Entrée (« Aller », « Suivant ») : passe au champ suivant au lieu d'enregistrer */
+  function entreeSuivant(form){
+    form.addEventListener('keydown',function(e){
+      if(e.key!=='Enter'||e.isComposing||e.target.tagName!=='INPUT')return;
+      e.preventDefault();
+      var champs=Array.prototype.filter.call(form.elements,function(el){return /^(INPUT|SELECT|TEXTAREA)$/.test(el.tagName)&&el.type!=='file'&&!el.disabled&&el.offsetParent!==null;});
+      var s=champs[champs.indexOf(e.target)+1];
+      if(s)s.focus();else e.target.blur();
+    });
+  }
   var tactile=window.matchMedia&&window.matchMedia('(pointer: coarse)').matches;
   function telecharger(blob,nom){var u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download=nom;document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(u);},5000);}
   function livrer(nom,type,contenu){
     var blob=new Blob([contenu],{type:type});
-    try{
-      var f=new File([blob],nom,{type:type});
-      if(tactile&&navigator.canShare&&navigator.canShare({files:[f]})){
-        navigator.share({files:[f],title:nom}).catch(function(e){if(!e||e.name!=='AbortError')telecharger(blob,nom);});
-        return;
-      }
-    }catch(e){}
-    telecharger(blob,nom);
+    return new Promise(function(ok){
+      try{
+        var f=new File([blob],nom,{type:type});
+        if(tactile&&navigator.canShare&&navigator.canShare({files:[f]})){
+          navigator.share({files:[f],title:nom}).then(function(){ok(true);},function(e){if(e&&e.name==='AbortError'){ok(false);return;}telecharger(blob,nom);ok(true);});
+          return;
+        }
+      }catch(e){}
+      telecharger(blob,nom);ok(true);
+    });
   }
   function copierVieux(t){
     var z=document.createElement('textarea');z.value=t;z.setAttribute('readonly','');z.style.position='fixed';z.style.opacity='0';
@@ -953,7 +1034,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     if(contacts.length){ecrire(CLE_CONTACTS,contacts);try{window.localStorage.removeItem(CLE_CARTES);}catch(e){}}
   }
   function contactParId(id){return contacts.filter(function(x){return x.id===id;})[0]||null;}
-  function enregistrerContacts(){ecrire(CLE_CONTACTS,contacts);persister();}
+  function enregistrerContacts(){ecrire(CLE_CONTACTS,contacts);persister();noterModif();}
 
   /* Bouton « carte donnée » à côté de chaque stand */
   Object.keys(stands).forEach(function(code){
@@ -1020,11 +1101,15 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     $('#vpo-cibles-n').textContent=faits+'/'+cibles.length;
     var badge=$('#vpo-badge-carte');badge.textContent=n;badge.hidden=n===0;
     afficherContacts();
+    if(typeof majSauvegarde==='function'&&ui)majSauvegarde();
   }
 
   /* Volet de saisie d'une carte donnée */
   var voletContact=$('#vpo-volet-contact'),formC=$('#vpo-form-contact'),champLibre=$('#vpo-c-libre-champ'),imgPhoto=$('#vpo-c-photo-img'),inPhoto=$('#vpo-c-photo');
-  var enCours=null,photoNouvelle,urlApercu=null;
+  var enCours=null,photoNouvelle,urlApercu=null,photoEnCours=false,jetonFiche=0,boutonEnregistrerC=formC.querySelector('button[type="submit"]');
+  function photoTraitement(oui){photoEnCours=oui;boutonEnregistrerC.disabled=oui;boutonEnregistrerC.textContent=oui?'Photo en cours…':'Enregistrer';}
+  voletContact.vpoModifie=function(){return photoEnCours||photoNouvelle!==undefined||empreinte(formC)!==voletContact.vpoInitial;};
+  entreeSuivant(formC);
   function apercu(src){
     if(urlApercu){URL.revokeObjectURL(urlApercu);urlApercu=null;}
     if(src instanceof Blob){urlApercu=URL.createObjectURL(src);src=urlApercu;}
@@ -1034,7 +1119,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
   }
   function ouvrirContact(id,lieu){
     var c=id?contactParId(id):null,f=formC.elements,v=c?c.lieu:(lieu||'');
-    enCours=c?c.id:null;photoNouvelle=undefined;
+    enCours=c?c.id:null;photoNouvelle=undefined;jetonFiche++;photoTraitement(false);
     formC.reset();
     if(v&&!Array.prototype.some.call(selLieu.options,function(o){return o.value===v;}))v='autre';
     selLieu.value=v;
@@ -1047,6 +1132,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     $('#vpo-c-suppr').hidden=!c;$('#vpo-c-vcard').hidden=!c;
     apercu(null);
     if(c&&c.photo)urlPhoto(c.id).then(function(u){if(u&&enCours===c.id&&photoNouvelle===undefined)apercu(u);});
+    voletContact.vpoInitial=empreinte(formC);
     fermerTous();ouvrir(voletContact);
     $('.vpo-volet-corps',voletContact).scrollTop=0;
   }
@@ -1062,12 +1148,21 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
   });
   $('#vpo-c-photo-btn').addEventListener('click',function(){inPhoto.value='';inPhoto.click();});
   inPhoto.addEventListener('change',function(){
-    var fi=inPhoto.files&&inPhoto.files[0];if(!fi)return;
-    reduire(fi).then(function(b){photoNouvelle=b;apercu(b);},function(){message('Photo illisible');});
+    var fi=inPhoto.files&&inPhoto.files[0],jeton=jetonFiche;if(!fi)return;
+    photoTraitement(true);
+    reduire(fi).then(function(b){
+      if(jeton!==jetonFiche)return;
+      photoNouvelle=b;apercu(b);photoTraitement(false);
+    },function(){
+      if(jeton!==jetonFiche)return;
+      photoTraitement(false);
+      if(/^image\//.test(fi.type)){photoNouvelle=fi;apercu(fi);message('Photo gardée telle quelle');}else message('Photo illisible');
+    });
   });
   $('#vpo-c-photo-suppr').addEventListener('click',function(){photoNouvelle=null;apercu(null);});
   formC.addEventListener('submit',function(e){
     e.preventDefault();
+    if(photoEnCours){message('Photo en cours de traitement…');return;}
     var f=formC.elements,v=selLieu.value;
     if(!v){message('Indiquez où la carte a été donnée');selLieu.focus();return;}
     if(v==='autre'&&!f.libre.value.trim()){message('Précisez le lieu');f.libre.focus();return;}
@@ -1077,7 +1172,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     CHAMPS.forEach(function(k){c[k]=f[k].value.trim();});
     if(photoNouvelle!==undefined){
       var id=c.id;c.photo=!!photoNouvelle;oublierPhoto(id);
-      photoEcrire(id,photoNouvelle).then(majContacts,function(){c.photo=false;enregistrerContacts();majContacts();message('Photo non enregistrée');});
+      photoEcrire(id,photoNouvelle).then(function(){versionDonnees++;prepa=null;majContacts();},function(){c.photo=false;enregistrerContacts();majContacts();message('Photo non enregistrée');});
     }
     enregistrerContacts();
     if(stands[v]&&!stands[v].input.checked){stands[v].input.checked=true;stands[v].input.dispatchEvent(new Event('change'));}
@@ -1087,7 +1182,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
   $('#vpo-c-suppr').addEventListener('click',function(){
     if(!enCours||!window.confirm('Supprimer cette carte et les coordonnées associées ?'))return;
     var id=enCours;contacts=contacts.filter(function(x){return x.id!==id;});
-    enregistrerContacts();oublierPhoto(id);photoEcrire(id,null).catch(function(){});
+    enregistrerContacts();oublierPhoto(id);photoEcrire(id,null).then(function(){versionDonnees++;prepa=null;},function(){});
     majContacts();fermer(voletContact);message('Carte supprimée');
   });
   function vEsc(s){return String(s||'').replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/([,;])/g,'\\$1');}
@@ -1106,7 +1201,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
   /* ——— Synthèses des conférences enregistrées avec Plaud ——— */
   var CLE_SYNTH='vpo-preventica-lyon-2026-syntheses',synth=lire(CLE_SYNTH,{});
   if(typeof synth!=='object'||!synth||Array.isArray(synth))synth={};
-  function enregistrerSynth(){ecrire(CLE_SYNTH,synth);persister();}
+  function enregistrerSynth(){ecrire(CLE_SYNTH,synth);persister();noterModif();}
   function infoConf(id){
     var c=confParId[id];if(c)return {heure:c.heure,court:c.court,titre:c.titre,salle:c.salle,fixe:true};
     var s=synth[id]||{};return {heure:'',court:'',titre:s.titre||'Autre conférence',salle:'',fixe:false};
@@ -1167,6 +1262,8 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     if(!modeEmploiVu){$('#vpo-plaud').open=n===0;modeEmploiVu=true;}
   }
   var voletS=$('#vpo-volet-synth'),formS=$('#vpo-form-synth'),synthEnCours=null;
+  voletS.vpoModifie=function(){return empreinte(formS)!==voletS.vpoInitial;};
+  entreeSuivant(formS);
   function editerSynth(id){
     var c=id?infoConf(id):null,s=id?synth[id]:null,f=formS.elements;
     synthEnCours=id||null;formS.reset();
@@ -1176,6 +1273,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     f.titre.value=c&&!c.fixe?c.titre:'';
     f.texte.value=s?s.texte||'':'';f.lien.value=s?s.lien||'':'';
     $('#vpo-vs-suppr').hidden=!aSynth(id);
+    voletS.vpoInitial=empreinte(formS);
     fermerTous();ouvrir(voletS);
     $('.vpo-volet-corps',voletS).scrollTop=0;
   }
@@ -1236,7 +1334,7 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
 
   /* ——— Exporter et sauvegarder ——— */
   var voletE=$('#vpo-volet-export'),inStock=$('#vpo-stock-in');
-  $$('[data-ouvrir-export]').forEach(function(b){b.addEventListener('click',function(){inStock.value=stock;fermerTous();ouvrir(voletE);});});
+  $$('[data-ouvrir-export]').forEach(function(b){b.addEventListener('click',function(){inStock.value=stock;majHorsLigne();majSauvegarde();fermerTous();ouvrir(voletE);preparerSauvegarde();});});
   inStock.addEventListener('input',function(){var v=parseInt(inStock.value,10);if(v>0&&v<1000){stock=v;retenir('stock',v);majContacts();}});
   function csvChamp(s){s=String(s==null?'':s);return /[";\r\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;}
   function parDate(a,b){return a.date<b.date?-1:1;}
@@ -1263,18 +1361,72 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     livrer('syntheses-preventica-lyon-'+jour()+'.md','text/markdown',out.join('\n'));
   }
   $('#vpo-ex-md').addEventListener('click',exporterSyntheses);
-  $('#vpo-synth-export').addEventListener('click',exporterSyntheses);
   function enDataUrl(b){return new Promise(function(ok){var r=new FileReader();r.onload=function(){ok(r.result);};r.onerror=function(){ok(null);};r.readAsDataURL(b);});}
-  $('#vpo-ex-json').addEventListener('click',function(){
-    message('Préparation de la sauvegarde…');
-    photosToutes().then(function(ph){
+  /* Sauvegarde complète : préparée à l'avance pour que le partage parte dès le toucher */
+  var versionDonnees=0,prepa=null;
+  function aDesDonnees(){return contacts.length>0||Object.keys(synth).length>0||Object.keys(etat).some(function(k){return etat[k];});}
+  function besoinSauvegarde(){return aDesDonnees()&&(!ui.sauvegarde||(ui.modifs|0)>0);}
+  function noterModif(){versionDonnees++;prepa=null;ui.modifs=(ui.modifs|0)+1;ecrire(CLE_UI,ui);majSauvegarde();}
+  function preparerSauvegarde(){
+    if(prepa&&prepa.version===versionDonnees)return prepa.promesse;
+    var p={version:versionDonnees,manquantes:0};
+    p.promesse=photosToutes().then(function(ph){
       var ids=Object.keys(ph);
       return Promise.all(ids.map(function(k){return enDataUrl(ph[k]);})).then(function(urls){var o={};ids.forEach(function(k,i){if(urls[i])o[k]=urls[i];});return o;});
     }).then(function(photosTxt){
-      var data={app:'vpo-preventica-lyon-2026',version:1,date:new Date().toISOString(),stands:etat,contacts:contacts,syntheses:synth,stock:stock,photos:photosTxt};
-      livrer('sauvegarde-preventica-lyon-'+jour()+'.json','application/json',JSON.stringify(data));
+      p.manquantes=contacts.filter(function(c){return c.photo&&!photosTxt[c.id];}).length;
+      p.texte=JSON.stringify({app:'vpo-preventica-lyon-2026',version:1,date:new Date().toISOString(),stands:etat,contacts:contacts,syntheses:synth,stock:stock,photos:photosTxt});
+      return p;
     });
-  });
+    prepa=p;return p.promesse;
+  }
+  function envoyerSauvegarde(p){
+    return livrer('sauvegarde-preventica-lyon-'+jour()+'.json','application/json',p.texte).then(function(parti){
+      if(!parti)return;
+      ui.sauvegarde=new Date().toISOString();ui.modifs=0;ecrire(CLE_UI,ui);majSauvegarde();
+      message(p.manquantes?'Sauvegarde faite, mais '+p.manquantes+' photo(s) manquante(s)':'Sauvegarde faite');
+    });
+  }
+  function sauvegarderTout(){
+    if(!aDesDonnees()){message('Rien à sauvegarder pour l’instant');return;}
+    var p=prepa;
+    if(p&&p.version===versionDonnees&&p.texte){envoyerSauvegarde(p);return;}
+    message('Préparation de la sauvegarde…');
+    preparerSauvegarde().then(envoyerSauvegarde);
+  }
+  $$('[data-sauvegarder]').forEach(function(b){b.addEventListener('click',sauvegarderTout);});
+  function quand(iso){var d=new Date(iso),a=horloge();if(isNaN(d))return '';return (d.toDateString()===a.toDateString()?'':d.toLocaleDateString('fr-FR',{day:'numeric',month:'short'})+' ')+heureCourte(iso);}
+  function majSauvegarde(){
+    var txt,alerte=false,n=ui.modifs|0;
+    if(!aDesDonnees())txt='Rien à sauvegarder pour l’instant.';
+    else if(!ui.sauvegarde){txt='Dernière sauvegarde\u00a0: jamais';alerte=true;}
+    else{txt='Dernière sauvegarde\u00a0: '+quand(ui.sauvegarde)+(n?' · '+n+' modification'+(n>1?'s':'')+' depuis':' · à jour');alerte=n>0;}
+    $$('[data-etat-sauv]').forEach(function(el){el.textContent=txt;el.classList.toggle('vpo-alerte-sauv',alerte);});
+    var badge=$('#vpo-badge-carte'),besoin=besoinSauvegarde();
+    badge.classList.toggle('vpo-badge--alerte',besoin);
+    if(!contacts.length){badge.textContent='!';badge.hidden=!besoin;}
+    if(besoin)badge.setAttribute('aria-label','à sauvegarder');else badge.removeAttribute('aria-label');
+    /* Bandeau de fin de journée, à partir de 17h15 le jour J (ou plus tard s'il reste à sauvegarder) */
+    var d=horloge(),fin=$('#vpo-fin');
+    var montrer=aDesDonnees()&&((jourJ(d)&&d.getHours()*60+d.getMinutes()>=1035)||(apresSalon(d)&&besoin));
+    fin.hidden=!montrer;
+    if(montrer){
+      var nc=contacts.length,np=contacts.filter(function(c){return c.photo;}).length,ns=Object.keys(synth).filter(aSynth).length;
+      $('#vpo-fin-txt').textContent='Fin de journée\u00a0: '+nc+' carte'+(nc>1?'s':'')+', '+np+' photo'+(np>1?'s':'')+', '+ns+' synthèse'+(ns>1?'s':'')+'. '+txt;
+    }
+  }
+  /* Usage hors ligne : petit service worker, seulement sur une adresse https */
+  function majHorsLigne(){
+    var el=$('#vpo-hors-ligne');
+    if(window.location.protocol==='file:')el.textContent='Hors ligne\u00a0: page ouverte depuis un fichier, elle s’ouvre sans réseau.';
+    else if(!('serviceWorker' in navigator)||!window.isSecureContext)el.textContent='Hors ligne\u00a0: non disponible sur cette adresse.';
+    else if(navigator.serviceWorker.controller)el.textContent='Hors ligne\u00a0: prêt. L’app s’ouvre même sans réseau.';
+    else el.textContent='Hors ligne\u00a0: en préparation. Rouvrez l’app une fois avec du réseau.';
+  }
+  if('serviceWorker' in navigator&&window.isSecureContext&&window.location.protocol!=='file:'){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+    navigator.serviceWorker.addEventListener('controllerchange',majHorsLigne);
+  }
   $('#vpo-ex-restaurer').addEventListener('click',function(){var i=$('#vpo-ex-fichier');i.value='';i.click();});
   $('#vpo-ex-fichier').addEventListener('change',function(){
     var fi=this.files&&this.files[0];if(!fi)return;
@@ -1286,7 +1438,8 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
       ecrire(CLE,d.stands&&typeof d.stands==='object'?d.stands:{});
       ecrire(CLE_CONTACTS,Array.isArray(d.contacts)?d.contacts:[]);
       ecrire(CLE_SYNTH,d.syntheses&&typeof d.syntheses==='object'?d.syntheses:{});
-      if(+d.stock>0)retenir('stock',+d.stock);
+      if(+d.stock>0)ui.stock=+d.stock;
+      ui.sauvegarde=d.date;ui.modifs=0;ecrire(CLE_UI,ui);
       var ph=d.photos&&typeof d.photos==='object'?d.photos:{};
       photosVider().catch(function(){}).then(function(){
         return Promise.all(Object.keys(ph).filter(function(k){return /^data:image\//.test(ph[k]);}).map(function(k){
@@ -1297,22 +1450,9 @@ display:grid;grid-template-rows:auto minmax(0,1fr) auto;height:100vh;height:100d
     r.readAsText(fi);
   });
 
-  /* ——— Questions : une à la fois ——— */
-  var questions=$$('#vpo-question>li'),pointsQ=$$('#vpo-q-points span'),iq=0;
-  function montrerQuestion(i){
-    iq=Math.max(0,Math.min(questions.length-1,i));
-    questions.forEach(function(q,k){q.hidden=k!==iq;});
-    pointsQ.forEach(function(p,k){p.classList.toggle('vpo-actif',k===iq);});
-    $('#vpo-q-prec').disabled=iq===0;$('#vpo-q-suiv').disabled=iq===questions.length-1;
-  }
-  $('#vpo-q-prec').addEventListener('click',function(){montrerQuestion(iq-1);});
-  $('#vpo-q-suiv').addEventListener('click',function(){montrerQuestion(iq+1);});
-  var qx=null;
-  $('#vpo-question').addEventListener('touchstart',function(e){qx=e.touches[0].clientX;},{passive:true});
-  $('#vpo-question').addEventListener('touchend',function(e){if(qx==null)return;var dx=e.changedTouches[0].clientX-qx;qx=null;if(Math.abs(dx)>50)montrerQuestion(iq+(dx<0?1:-1));},{passive:true});
-
   /* ——— Démarrage ——— */
-  majStands();majContacts();majSynth();montrerQuestion(0);
+  majStands();majContacts();majSynth();majSauvegarde();majEnsuite();majHorsLigne();
+  if(decalage)message('Heure simulée\u00a0: '+horloge().toLocaleString('fr-FR',{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}));
   filtre=ui.filtre==='prio'||ui.filtre==='carte'?ui.filtre:'';
   choisirFiltre(filtre);
   var maintenant=creneauActuel();btnMaintenant.hidden=maintenant<0;
