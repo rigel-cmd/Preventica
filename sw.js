@@ -1,6 +1,6 @@
 /* Préventica Lyon : garde l'app utilisable sans réseau (page, images, polices).
    Changer le numéro de CACHE force le renouvellement complet du cache. */
-var CACHE = 'vpo-preventica-v4';
+var CACHE = 'vpo-preventica-v5';
 var POLICES = 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@600;700;800&display=swap';
 var IMAGES = ['assets/carte-recto.jpg', 'assets/carte-verso.jpg'];
 
