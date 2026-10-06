@@ -319,7 +319,7 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
 /* ———— Repères horaires, sauvegarde, formulaires (lot du 5 octobre) ———— */
 #vpo-parcours .vpo-haut-txt{text-align:left;color:inherit;cursor:pointer}
 #vpo-parcours .vpo-sous.vpo-ensuite{color:#fff;font-weight:600;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
-#vpo-parcours .vpo-sous.vpo-proche{color:var(--orange);font-weight:700}
+#vpo-parcours .vpo-sous.vpo-proche{color:var(--orange)}
 #vpo-parcours .vpo-fin{display:flex;align-items:center;gap:8px;margin:0 16px 6px;padding:6px 6px 6px 12px;border-radius:16px;background:#FFF3D6;color:var(--ardoise-fonce);font-size:12.5px;line-height:1.3}
 #vpo-parcours .vpo-fin>span{flex:1;min-width:0}
 #vpo-parcours .vpo-fin .vpo-btn{flex:none;min-height:44px;padding:6px 12px;font-size:13px}
@@ -334,7 +334,7 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
 #vpo-parcours .vpo-badge.vpo-badge--alerte{background:var(--rouge);color:#fff}
 #vpo-parcours button[type="submit"]:disabled{opacity:.55;cursor:progress}
 @media (max-width:359px){#vpo-parcours .vpo-onglet{font-size:10px;letter-spacing:-.01em}}
-@media (max-width:340px){#vpo-parcours .vpo-anneau{display:none}#vpo-parcours .vpo-pilule{padding-left:12px}}
+@media (max-width:359px){#vpo-parcours .vpo-anneau{display:none}#vpo-parcours .vpo-pilule{padding-left:12px}#vpo-parcours .vpo-sous.vpo-ensuite{font-size:12px}}
 
 @media (min-width:561px){
  #vpo-parcours{height:calc(100dvh - 32px);margin:16px auto;border-radius:28px;box-shadow:0 30px 60px -30px rgba(35,56,74,.45)}
@@ -938,7 +938,6 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
           navigator.share({files:[f],title:nom}).then(function(){ok(true);},function(e){
             var n=e&&e.name;
             if(n==='AbortError'||n==='InvalidStateError'){ok(false);return;}
-            if(n==='NotAllowedError'){message('Touchez de nouveau pour enregistrer le fichier');ok(false);return;}
             telecharger(blob,nom);ok(true);
           });
           return;
@@ -1330,8 +1329,10 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
     if(!texte){message('Collez ou importez la synthèse');f.texte.focus();return;}
     if(lien&&!/^https?:\/\//i.test(lien))lien='https://'+lien;
     var id=synthEnCours||'x'+Date.now().toString(36);
-    synth[id]={titre:fixe?fixe.titre:titre,heure:fixe?fixe.heure:'',texte:texte,lien:lien,maj:new Date().toISOString()};
-    enregistrerSynth();majSynth();fermer(voletS);vibrer();message('Synthèse enregistrée');
+    var ancien=synth[id],nv={titre:fixe?fixe.titre:titre,heure:fixe?fixe.heure:'',texte:texte,lien:lien,maj:new Date().toISOString()};
+    var change=!ancien||ancien.titre!==nv.titre||ancien.heure!==nv.heure||ancien.texte!==nv.texte||ancien.lien!==nv.lien;
+    if(change){synth[id]=nv;enregistrerSynth();}
+    majSynth();fermer(voletS);if(change)vibrer();message(change?'Synthèse enregistrée':'Aucune modification');
   });
   $('#vpo-vs-suppr').addEventListener('click',function(){
     if(!synthEnCours||!window.confirm('Supprimer cette synthèse ?'))return;
@@ -1424,10 +1425,11 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
     /* Sur téléphone, le partage doit partir du toucher : on prépare, puis on demande un second toucher */
     var partage=tactile&&!!navigator.canShare;
     message('Préparation de la sauvegarde…');
+    if(!partage)envoiEnCours=true;
     preparerSauvegarde().then(function(p){
-      if(partage)message('Sauvegarde prête : touchez de nouveau « Sauvegarder »');
-      else envoyerSauvegarde(p);
-    });
+      if(partage){message('Sauvegarde prête : touchez de nouveau « Sauvegarder »');return;}
+      envoiEnCours=false;envoyerSauvegarde(p);
+    },function(){envoiEnCours=false;});
   }
   $$('[data-sauvegarder]').forEach(function(b){b.addEventListener('click',sauvegarderTout);});
   function quand(iso){var d=new Date(iso),a=horloge();if(isNaN(d))return '';return (d.toDateString()===a.toDateString()?'':d.toLocaleDateString('fr-FR',{day:'numeric',month:'short'})+' ')+heureCourte(iso);}
