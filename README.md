@@ -10,7 +10,11 @@ Parcours de Victimes & Préjudices Avocats pour le salon Préventica Lyon, mardi
   - **Questions** : les trois questions à poser sur les stands, une par écran.
 - `assets/` : recto et verso de la carte.
 
-La page tient en un seul fichier HTML, avec les images à côté. Les polices viennent de Google Fonts.
+La page tient en un seul fichier HTML, avec les images à côté. Les polices viennent de Google Fonts (affichage non bloquant, polices du téléphone en attendant).
+
+Le jour du salon, l'en-tête annonce le créneau suivant (« Ensuite 10h45 · dans 25 min · Salle A ») ; le toucher ramène au créneau en cours. Pour essayer l'app à une autre heure, ajouter `?simuler=2026-10-06T15:50` à l'adresse.
+
+`sw.js` garde l'app utilisable sans réseau quand elle est servie en https : l'ouvrir une fois avec du réseau suffit (le volet « Exporter et sauvegarder » indique « Hors ligne : prêt »).
 
 ## Données
 
@@ -20,6 +24,6 @@ Tout est enregistré dans le navigateur du téléphone (localStorage, et Indexed
 - les synthèses en un seul fichier Markdown ;
 - une sauvegarde complète (JSON, photos comprises), qui se restaure sur un autre téléphone ou navigateur.
 
-À faire à la fin de la journée : le navigateur peut effacer ces données au bout de quelques jours sans visite.
+À faire à la fin de la journée : le navigateur peut effacer ces données au bout de quelques jours sans visite. À partir de 17h15, un bandeau « Fin de journée » propose la sauvegarde ; l'état « Dernière sauvegarde » et le badge de l'onglet Cartes signalent ce qui n'est pas encore sauvegardé. Ouvrir l'app toujours de la même façon (même navigateur, même adresse) : chaque accès a son propre stockage.
 
 D'après le catalogue des exposants (export du 5 octobre 2026) et le programme papier du mardi.
