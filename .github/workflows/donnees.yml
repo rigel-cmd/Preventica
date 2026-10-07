@@ -22,20 +22,30 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Générer les fichiers lisibles
-        run: node outils/publier-donnees.mjs .
-      - name: Enregistrer dans le dépôt
+      - name: Générer et enregistrer les fichiers lisibles
+        # Toujours à partir de la pointe de main (une autre sauvegarde a pu arriver entre-temps), avec reprise si le push est refusé
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
-          git add -A donnees
-          if git diff --cached --quiet; then
-            echo "Rien de nouveau à publier."
-          else
+          for essai in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            node outils/publier-donnees.mjs .
+            git add -A donnees
+            if git diff --cached --quiet; then
+              echo "Rien de nouveau à publier."
+              exit 0
+            fi
             git commit -m "Publie les données du salon"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          fi
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep 5
+          done
+          exit 1

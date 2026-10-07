@@ -10,7 +10,7 @@ const DOSSIER = path.join(RACINE, 'donnees');
 const APP = 'vpo-preventica-lyon-2026';
 
 // ---------- Sauvegarde la plus récente ----------
-const candidates = fs.existsSync(DOSSIER) ? fs.readdirSync(DOSSIER).filter((f) => /^sauvegarde[\w.-]*\.json$/i.test(f)) : [];
+const candidates = fs.existsSync(DOSSIER) ? fs.readdirSync(DOSSIER).filter((f) => /^sauvegarde.*\.json$/i.test(f)) : [];
 let source = null;
 for (const f of candidates) {
   try {
@@ -21,7 +21,34 @@ for (const f of candidates) {
     console.warn(`Ignoré (illisible) : ${f}`);
   }
 }
-if (!source) { console.log('Aucune sauvegarde du parcours dans donnees/ : rien à publier.'); process.exit(0); }
+const ACCUEIL = `# Préventica Lyon 2026 — données du salon
+
+Ce dossier accueille les données de l'app du parcours : cartes données, interlocuteurs, photos des cartes de visite, synthèses Plaud, stands visités.
+
+**Il est public** : tout ce qui est déposé ici est visible par tous.
+
+## Publier ou mettre à jour les données
+
+1. Dans l'app, sur le téléphone : onglet **Cartes** → **Exporter et sauvegarder** → **Sauvegarde complète**, puis envoyez-vous le fichier (e-mail, AirDrop…).
+2. Sur github.com, ouvrez ce dossier \`donnees/\`, puis **Add file** → **Upload files**, et déposez le fichier (\`sauvegarde-….json\`).
+3. Validez avec **Commit changes**.
+
+En une à deux minutes, cette page est remplacée par le bilan du salon : synthèses complètes, tableau des contacts avec les photos, stands visités. Des fichiers prêts à l'emploi sont générés à côté :
+- \`syntheses.md\` ;
+- \`contacts.csv\` et \`contacts-excel.csv\` ;
+- \`contacts.vcf\` ;
+- le dossier \`photos/\`.
+
+Le site propose aussi ces données sur tout appareil qui n'en a pas encore (votre ordinateur, par exemple).
+`;
+const GENERES = ['index.json', 'syntheses.md', 'contacts.csv', 'contacts-excel.csv', 'contacts.vcf', 'photos'];
+if (!source) {
+  fs.mkdirSync(DOSSIER, { recursive: true });
+  for (const f of GENERES) fs.rmSync(path.join(DOSSIER, f), { recursive: true, force: true });
+  fs.writeFileSync(path.join(DOSSIER, 'README.md'), ACCUEIL);
+  console.log('Aucune sauvegarde du parcours dans donnees/ : page d\'accueil remise, rien à publier.');
+  process.exit(0);
+}
 const D = source.d;
 const contacts = (Array.isArray(D.contacts) ? D.contacts : []).filter((c) => c && typeof c === 'object').slice().sort((a, b) => String(a.date || '').localeCompare(String(b.date || '')));
 const synth = D.syntheses && typeof D.syntheses === 'object' ? D.syntheses : {};
@@ -56,10 +83,12 @@ const heure = (iso) => paris(iso, { hour: '2-digit', minute: '2-digit' }).replac
 const dateLongue = (iso) => paris(iso, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' }).replace(/(\d\d):(\d\d)/, '$1h$2');
 const slug = (s) => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-+|-+$/g, '').toLowerCase().slice(0, 40) || 'contact';
 const ancre = (s) => String(s).toLowerCase().replace(/[^\p{L}\p{N}\s-]/gu, '').trim().replace(/\s/g, '-');
-const cellule = (s) => String(s == null ? '' : s).replace(/\|/g, '\\|').replace(/\r?\n/g, '<br>');
+const html = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+const ligne = (s) => html(s).replace(/\r\n?|\n/g, ' ');
+const cellule = (s) => html(s).replace(/\|/g, '\\|').replace(/\r\n?|\n/g, '<br>');
 const pluriel = (n, mot, motP) => `${n} ${n > 1 ? (motP || mot + 's') : mot}`;
 function lieu(c) {
-  const v = c.lieu || '';
+  const v = String(c.lieu || '');
   if (STANDS[v]) return `${v} · ${STANDS[v].nom}`;
   if (v.startsWith('conf:')) {
     const id = v.slice(5);
@@ -104,16 +133,16 @@ for (const c of contacts) {
 // ---------- Contacts : CSV (GitHub et Excel) et vCard ----------
 const COLONNES = ['Date', 'Heure', 'Lieu', 'Interlocuteur', 'Fonction', 'Société', 'Téléphone', 'E-mail', 'Note', 'Photo'];
 const lignes = contacts.map((c) => [paris(c.date, { day: '2-digit', month: '2-digit', year: 'numeric' }), heure(c.date), lieu(c), c.nom, c.fonction, c.societe, c.tel, c.email, c.note, fichierPhoto[c.id] || '']);
-const csv = (sep) => [COLONNES, ...lignes].map((l) => l.map((v) => {
+const csv = (sep, tableur) => [COLONNES, ...lignes].map((l) => l.map((v) => {
   let s = String(v == null ? '' : v);
-  if (/^[=+\-@]/.test(s)) s = "'" + s; // jamais interprété comme une formule par un tableur
+  if (tableur && /^[=+\-@\t\r]/.test(s)) s = "'" + s; // jamais interprété comme une formule par Excel
   return new RegExp(`[${sep}"\\r\\n]`).test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
 }).join(sep)).join('\r\n') + '\r\n';
-ecrire('contacts.csv', csv(','));
-ecrire('contacts-excel.csv', '\uFEFF' + csv(';'));
+ecrire('contacts.csv', csv(',', false));
+ecrire('contacts-excel.csv', '\uFEFF' + csv(';', true));
 const vEsc = (s) => String(s || '').replace(/\\/g, '\\\\').replace(/\r?\n/g, '\\n').replace(/([,;])/g, '\\$1');
 const vcards = contacts.filter((c) => c.nom || c.tel || c.email).map((c) => {
-  const mots = (c.nom || '').trim().split(/\s+/), prenom = mots.length > 1 ? mots[0] : '', famille = mots.length > 1 ? mots.slice(1).join(' ') : mots[0] || '';
+  const mots = String(c.nom || '').trim().split(/\s+/), prenom = mots.length > 1 ? mots[0] : '', famille = mots.length > 1 ? mots.slice(1).join(' ') : mots[0] || '';
   const l = ['BEGIN:VCARD', 'VERSION:3.0', `N:${vEsc(famille)};${vEsc(prenom)};;;`, `FN:${vEsc(c.nom || c.societe || lieu(c))}`];
   if (c.societe) l.push('ORG:' + vEsc(c.societe));
   if (c.fonction) l.push('TITLE:' + vEsc(c.fonction));
@@ -132,8 +161,8 @@ const autres = Object.keys(synth).filter((id) => !CONF_PAR_ID[id] && aSynth(id))
 function blocSynthese(id, niveau) {
   const c = infoConf(id), s = synth[id] || {};
   const h = '#'.repeat(niveau);
-  const out = [`${h} ${c.heure ? c.heure + ' · ' : ''}${c.titre}`];
-  if (c.salle) out.push(`*${c.salle}*`);
+  const out = [`${h} ${c.heure ? ligne(c.heure) + ' · ' : ''}${ligne(c.titre)}`];
+  if (c.salle) out.push(`*${ligne(c.salle)}*`);
   if (CONF_PAR_ID[id] && CONF_PAR_ID[id].detail) out.push('', CONF_PAR_ID[id].detail);
   out.push('', aSynth(id) ? decaler(s.texte, niveau) : '_Pas de synthèse enregistrée._');
   if (s.lien) out.push('', `[Écouter l'enregistrement Plaud](${s.lien})`);
@@ -152,7 +181,7 @@ const vus = Object.keys(etat).filter((k) => etat[k]);
 const nsS = idsSuivies.filter(aSynth).length;
 const R = [];
 R.push('# Préventica Lyon 2026 — bilan du salon', '');
-R.push(`> Page générée automatiquement à partir de la sauvegarde **${source.f}** (${dateLongue(D.date)}). Ne pas la modifier à la main : déposer une nouvelle sauvegarde la régénère (voir en bas).`, '');
+R.push(`> Page générée automatiquement à partir de la sauvegarde **${ligne(source.f)}** (${dateLongue(D.date)}). Ne pas la modifier à la main : déposer une nouvelle sauvegarde la régénère (voir en bas).`, '');
 R.push(`**${pluriel(CONFS.length, 'conférence suivie', 'conférences suivies')}** · **${nsS}/${CONFS.length} synthèses**${autres.length ? ` (+${autres.length} autre${autres.length > 1 ? 's' : ''})` : ''} · **${pluriel(contacts.length, 'carte donnée', 'cartes données')}** · **${pluriel(vus.length, 'stand visité', 'stands visités')}**`, '');
 const T_CONF = 'Conférences suivies', T_CARTES = `Cartes données (${contacts.length})`, T_STANDS = `Stands visités (${vus.length})`;
 R.push('## Sommaire', '', `- [${T_CONF}](#${ancre(T_CONF)})`, `- [${T_CARTES}](#${ancre(T_CARTES)})`, `- [${T_STANDS}](#${ancre(T_STANDS)})`, '- [Fichiers](#fichiers)', '- [Mettre à jour ces données](#mettre-à-jour-ces-données)', '');
@@ -176,7 +205,7 @@ if (vus.length) {
     if (ici.length) R.push(`- **Allée ${l}** : ${ici.map(([code, nom]) => `${code} ${nom}`).join(', ')}`);
   }
   const inconnus = vus.filter((k) => !STANDS[k]);
-  if (inconnus.length) R.push(`- **Autres** : ${inconnus.join(', ')}`);
+  if (inconnus.length) R.push(`- **Autres** : ${inconnus.map(ligne).join(', ')}`);
   R.push('');
 } else R.push('_Aucun stand coché._', '');
 R.push('## Fichiers', '',
@@ -185,7 +214,7 @@ R.push('## Fichiers', '',
   '- [contacts-excel.csv](contacts-excel.csv) : la même liste, à ouvrir dans Excel',
   '- [contacts.vcf](contacts.vcf) : les contacts, à importer dans un carnet d\'adresses (Outlook, Contacts…)',
   '- [photos/](photos/) : les photos des cartes de visite',
-  `- [${source.f}](${source.f}) : la sauvegarde complète, à restaurer dans l'app (Cartes → Exporter et sauvegarder → Restaurer)`, '');
+  `- [${ligne(source.f)}](${encodeURIComponent(source.f)}) : la sauvegarde complète, à restaurer dans l'app (Cartes → Exporter et sauvegarder → Restaurer)`, '');
 R.push('## Mettre à jour ces données', '',
   '1. Dans l\'app, sur le téléphone : onglet **Cartes** → **Exporter et sauvegarder** → **Sauvegarde complète**, puis envoyez-vous le fichier.',
   '2. Sur github.com, ouvrez ce dossier `donnees/`, puis **Add file** → **Upload files**, et déposez le fichier (`sauvegarde-….json`).',

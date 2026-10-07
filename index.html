@@ -1314,6 +1314,7 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
       var court=!ui.sauvegarde?'jamais sauvegardé':n?n+'\u00a0modif. à sauvegarder':'sauvegardé à '+quand(ui.sauvegarde);
       $('#vpo-fin-txt').textContent='Fin de journée · '+(nc?nc+'\u00a0carte'+(nc>1?'s':''):nv+'\u00a0stand'+(nv>1?'s':'')+' vu'+(nv>1?'s':''))+', '+ns+'\u00a0synthèse'+(ns>1?'s':'')+' · '+court;
     }
+    if(publiees)majPubliees();
     majEnsuite();
   }
   /* Usage hors ligne : petit service worker, seulement sur une adresse https */
@@ -1370,11 +1371,11 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
   $$('[data-charger-publiees]').forEach(function(b){b.addEventListener('click',function(){
     if(!publiees)return;
     message('Téléchargement des données publiées…');
-    fetch('donnees/'+publiees.fichier,{cache:'no-cache'}).then(function(r){if(!r.ok)throw r;return r.json();}).then(function(d){fermerTous();restaurer(d,'la sauvegarde publiée');},function(){message('Données publiées introuvables');});
+    fetch('donnees/'+encodeURIComponent(publiees.fichier),{cache:'no-cache'}).then(function(r){if(!r.ok)throw r;return r.json();}).then(function(d){fermerTous();restaurer(d,'la sauvegarde publiée');},function(){message('Données publiées introuvables');});
   });});
   if(/^https?:$/.test(window.location.protocol)){
     fetch('donnees/index.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).then(function(ix){
-      if(!ix||typeof ix.fichier!=='string'||!/^sauvegarde[\w.-]*\.json$/i.test(ix.fichier))return;
+      if(!ix||typeof ix.fichier!=='string'||!/^sauvegarde[^\/\\]*\.json$/i.test(ix.fichier))return;
       publiees=ix;majPubliees();
     }).catch(function(){});
   }
