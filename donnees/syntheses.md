@@ -1,30 +1,18 @@
-# Préventica Lyon 2026 — bilan du salon
+# Préventica Lyon 2026 – synthèses des conférences
 
-> Page générée automatiquement à partir de la sauvegarde **sauvegarde-preventica-lyon-2026-10-07.json** (mercredi 7 octobre 2026 à 11h25). Ne pas la modifier à la main : déposer une nouvelle sauvegarde la régénère (voir en bas).
+Mardi 6 octobre 2026, Eurexpo. Synthèses enregistrées avec Plaud (sauvegarde du mercredi 7 octobre 2026 à 11h25).
 
-**4 conférences suivies** · **4/4 synthèses** · **12 cartes données** · **2 stands visités**
-
-## Sommaire
-
-- [Conférences suivies](#conférences-suivies)
-- [Cartes données (12)](#cartes-données-12)
-- [Stands visités (2)](#stands-visités-2)
-- [Fichiers](#fichiers)
-- [Mettre à jour ces données](#mettre-à-jour-ces-données)
-
-## Conférences suivies
-
-### 9h45 – 10h15 · Sécuriser les opérateurs lors du travail en hauteur
+## 9h45 – 10h15 · Sécuriser les opérateurs lors du travail en hauteur
 *Atelier · Atelier Solution 3*
 
 Tubesca-Comabi. Réglementation, plateformes individuelles roulantes, PEMP et échafaudages.
 
-#### Tubesca-Comabi : sécurisation des opérateurs lors du travail en hauteur
+### Tubesca-Comabi : sécurisation des opérateurs lors du travail en hauteur
 
 Victimes & Préjudices Avocats · Veille Preventica 2026
 Synthèse établie le 6 octobre 2026 à partir de la transcription de la conférence. Document interne.
 
-##### Fiche conférence
+#### Fiche conférence
 
 Intérêt pour le cabinet : modéré. Il s'agit d'une présentation commerciale d'un fabricant. Le rappel réglementaire tient en quelques minutes. Il reste exploitable sur un point précis : l'usage de l'escabeau ou de l'échelle comme poste de travail.
 
@@ -36,7 +24,7 @@ Intérêt pour le cabinet : modéré. Il s'agit d'une présentation commerciale 
 | Format | Environ 45 minutes. Rappel réglementaire puis démonstration de produits |
 | Événement | Preventica 2026 |
 
-##### Messages clés
+#### Messages clés
 
 - La chute de hauteur est présentée comme l'un des risques professionnels les plus mortels, juste après le risque routier (+ de 90 décès par an, 90 000 accidents de chute en hauteur, 4000 incapacités permanentes).
 - Selon les intervenants, un arrêt de travail de trois à six mois consécutif à une chute coûte environ 40 000 € à l'entreprise. Ce chiffre n'est pas sourcé.
@@ -48,7 +36,7 @@ Intérêt pour le cabinet : modéré. Il s'agit d'une présentation commerciale 
 - Les plateformes à élévation de personnes présentées sont soumises, selon les intervenants, à une vérification périodique tous les six mois.
 - Sanctions évoquées pour l'employeur : arrêt de chantier, amendes, indemnités, poursuites pénales.
 
-##### Éléments juridiques mobilisables
+#### Éléments juridiques mobilisables
 
 Le socle utile tient en un article : R4323-63 du Code du travail. L'escabeau utilisé comme poste de travail est interdit par principe. C'est une situation fréquente dans les dossiers de chute.
 
@@ -61,7 +49,7 @@ Le socle utile tient en un article : R4323-63 du Code du travail. L'escabeau uti
 | [INRS, dossier chutes de hauteur](https://www.inrs.fr/risques/chutes-hauteur/ce-qu-il-faut-retenir.html) | Deuxième cause d'accidents du travail mortels après le risque routier. 11 % des AT avec au moins quatre jours d'arrêt en 2019 | Vérifié, données 2019 |
 | [INRS, échelles et escabeaux](https://www.inrs.fr/risques/chutes-hauteur/equipements-acces-hauteur.html) | En 2019, plus de 16 % des chutes avec incapacité permanente sont des chutes d'échelle ou d'escabeau | Vérifié, données 2019 |
 
-##### Intérêt pour le cabinet
+#### Intérêt pour le cabinet
 
 La conférence fournit surtout une grille de questions pour qualifier une chute de hauteur en faute inexcusable.
 
@@ -93,7 +81,7 @@ Un argument à exploiter. Les Carsat subventionnent l'achat d'équipements plus 
 
 Prescription : la conférence n'ouvre aucune piste directe. Les CSE, les CSSCT et les services de prévention et de santé au travail présents sur le salon restent les interlocuteurs pertinents.
 
-##### Pistes éditoriales
+#### Pistes éditoriales
 
 | Format | Sujet | Angle |
 | --- | --- | --- |
@@ -104,24 +92,24 @@ Prescription : la conférence n'ouvre aucune piste directe. Les CSE, les CSSCT e
 
 Les chiffres INRS de 2019 sont réutilisables à condition de citer la source et l'année.
 
-##### Sources
+#### Sources
 
 - [Légifrance, Code du travail, articles R4323-58 à R4323-90](https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018489845/)
 - [Légifrance, arrêté du 1er mars 2004, article 23](https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006680469)
 - [INRS, risques liés aux chutes de hauteur](https://www.inrs.fr/risques/chutes-hauteur/ce-qu-il-faut-retenir.html)
 - [INRS, échelles, escabeaux et marchepieds](https://www.inrs.fr/risques/chutes-hauteur/equipements-acces-hauteur.html)
 
-### 10h45 – 11h30 · Le PPSPS, outil de prévention des risques sur les chantiers
+## 10h45 – 11h30 · Le PPSPS, outil de prévention des risques sur les chantiers
 *Conférence · Salle A*
 
 OPPBTP.
 
-#### OPPBTP : PPSPS, jurisprudence et évolutions des pratiques
+### OPPBTP : PPSPS, jurisprudence et évolutions des pratiques
 
 Victimes & Préjudices Avocats · Veille Preventica 2026
 Synthèse établie le 6 octobre 2026 à partir de la transcription de la conférence. Document interne.
 
-##### Fiche conférence
+#### Fiche conférence
 
 Intérêt pour le cabinet : élevé. La conférence porte sur un revirement de jurisprudence qui élargit le cercle des entreprises tenues d'établir un PPSPS. Elle élargit du même coup le cercle des manquements invocables après un accident sur un chantier coordonné.
 
@@ -133,7 +121,7 @@ Intérêt pour le cabinet : élevé. La conférence porte sur un revirement de j
 | Format | Exposé juridique puis déclinaison pratique |
 | Événement | Preventica 2026 |
 
-##### Messages clés
+#### Messages clés
 
 - L'arrêt du 14 janvier 2025 fait suite à un accident mortel lors d'une maintenance programmée d'une grue sur un chantier. L'employeur de la victime et l'entreprise utilisatrice de la grue ont été condamnés.
 - La Cour de cassation juge que toute entreprise qui intervient à un moment quelconque des travaux doit établir un PPSPS dès lors qu'un PGC existe. Le mainteneur de la grue y était tenu.
@@ -146,7 +134,7 @@ Intérêt pour le cabinet : élevé. La conférence porte sur un revirement de j
 - Absence de PPSPS ne signifie pas absence de prévention. Les intervenants hors champ doivent connaître les risques liés aux autres entreprises, l'environnement du chantier, les consignes de secours, l'hygiène et les règles de circulation. Le coordonnateur SPS doit être informé de leur venue.
 - Pour les livraisons, la recommandation R476 de 2015 prévoit un document harmonisé d'organisation des livraisons (DHOL).
 
-##### Éléments juridiques mobilisables
+#### Éléments juridiques mobilisables
 
 Le socle est l'article L4532-9 du Code du travail, relu par l'arrêt du 14 janvier 2025. Tout intervenant technique sur un chantier soumis à PGC doit avoir établi un PPSPS. Son absence devient un manquement identifiable dans un dossier d'accident.
 
@@ -157,7 +145,7 @@ Le socle est l'article L4532-9 du Code du travail, relu par l'arrêt du 14 janvi
 | [Questions-réponses DGT, mars 2026](https://www.espace-droit-prevention.com/sites/default/files/2026-03/20260317_Obligation-redaction_PPSPS-QR-Mars-2026.pdf) | Définition des travaux qui concourent à l'opération, exclusions, régime strict de l'urgence, obligations des intervenants hors champ | Vérifié. Document d'interprétation administrative, sans valeur normative |
 | [Recommandation CNAM R476](https://www.ameli.fr/sites/default/files/Documents/31348/document/r476.pdf) | Organisation des livraisons sur les chantiers du BTP. Création du DHOL | Vérifié |
 
-##### Intérêt pour le cabinet
+#### Intérêt pour le cabinet
 
 La conférence permet d'identifier de nouveaux profils de victimes et de nouveaux responsables sur les chantiers coordonnés.
 
@@ -191,7 +179,7 @@ Un argument à exploiter. Le questions-réponses de la DGT écarte l'urgence en 
 
 Prescription : l'OPPBTP et les coordonnateurs SPS sont des relais d'information du secteur. Ils ne sont pas des prescripteurs directs pour un cabinet de victimes. Les CSE des entreprises de maintenance et de location d'engins constituent une cible plus pertinente.
 
-##### Pistes éditoriales
+#### Pistes éditoriales
 
 | Format | Sujet | Angle |
 | --- | --- | --- |
@@ -200,7 +188,7 @@ Prescription : l'OPPBTP et les coordonnateurs SPS sont des relais d'information 
 | Newsletter | Accident du travail sur chantier : qui est responsable ? | Employeur, entreprise utilisatrice, maître d'ouvrage, coordonnateur SPS. Faute inexcusable et recours contre les tiers |
 | Post LinkedIn | L'urgence ne justifie pas tout | Le défaut de planification n'exonère pas de PPSPS |
 
-##### Sources
+#### Sources
 
 - [Légifrance, Cass. crim., 14 janvier 2025, n° 23-84.130](https://www.legifrance.gouv.fr/juri/id/JURITEXT000051012931/)
 - [Questions-réponses DGT sur l'obligation de rédaction du PPSPS, mars 2026](https://www.espace-droit-prevention.com/sites/default/files/2026-03/20260317_Obligation-redaction_PPSPS-QR-Mars-2026.pdf)
@@ -209,17 +197,17 @@ Prescription : l'OPPBTP et les coordonnateurs SPS sont des relais d'information 
 - [Éditions Tissot, PPSPS et entreprises intervenantes](https://www.editions-tissot.fr/actualite/droit-du-travail/plan-particulier-de-securite-et-de-protection-de-la-sante-toutes-les-entreprises-intervenant-sur-le-chantier-sont-concernees)
 - [CNAM, recommandation R476](https://www.ameli.fr/sites/default/files/Documents/31348/document/r476.pdf)
 
-### 11h15 – 12h15 · UX-Forum Innovation : exosquelettes
+## 11h15 – 12h15 · UX-Forum Innovation : exosquelettes
 *Conférence · Salle B*
 
 Cercle Entreprises et Santé.
 
-#### 26e UX-Forum Innovation Exosquelettes : intégrer les différences, inventer de nouveaux usages
+### 26e UX-Forum Innovation Exosquelettes : intégrer les différences, inventer de nouveaux usages
 
 Victimes & Préjudices Avocats · Veille Preventica 2026
 Synthèse établie le 6 octobre 2026 à partir de la transcription de la conférence. Document interne.
 
-##### Fiche conférence
+#### Fiche conférence
 
 Intérêt pour le cabinet : élevé, sur un angle inattendu. La conférence parle de prévention, mais elle documente surtout l'usage de l'exosquelette comme aide technique au quotidien, au travail comme à domicile. Elle intéresse donc directement l'évaluation des besoins d'une victime : aides techniques, assistance par tierce personne, maintien dans l'emploi.
 
@@ -231,7 +219,7 @@ Intérêt pour le cabinet : élevé, sur un angle inattendu. La conférence parl
 | Format | Table ronde d'une heure, trois témoignages puis échanges |
 | Date | 6 octobre 2026, Preventica Lyon |
 
-##### Messages clés
+#### Messages clés
 
 - Le marché mondial compterait entre 50 000 et 63 000 exosquelettes professionnels. L'animatrice précise qu'il n'existe pas de statistiques officielles. Les études disponibles viennent surtout des fabricants et de cabinets de conseil.
 - Chez Triballat, un binôme infirmière et HSE a intégré des exosquelettes contre les TMS des épaules et du dos. Une salariée absente plusieurs mois par an pour des douleurs d'épaule a repris durablement son poste. Le médecin du travail l'a suivie mensuellement pendant six mois.
@@ -245,7 +233,7 @@ Intérêt pour le cabinet : élevé, sur un angle inattendu. La conférence parl
 - L'image de l'exosquelette a changé. Les salariés, leurs collègues et les personnes accompagnées le perçoivent désormais positivement.
 - Les intervenants insistent : l'exosquelette ne donne pas de force supplémentaire. Il réduit la douleur et la fatigue. Il ne remplace pas le lève-personne et les autres aides techniques.
 
-##### Éléments juridiques mobilisables
+#### Éléments juridiques mobilisables
 
 La conférence ne cite aucun texte. Son intérêt juridique tient à ce qu'elle révèle des besoins des victimes et des obligations des employeurs.
 
@@ -263,7 +251,7 @@ Ajouts du rédacteur, absents de la conférence, à confirmer par les avocats du
 - Inaptitude et reclassement. Après un AT ou une MP, l'absence d'étude d'un exosquelette comme aménagement de poste peut nourrir la contestation d'un licenciement pour inaptitude.
 - Articulation avec la PCH. Le financement d'une aide technique par la MDPH et son incidence sur l'indemnisation sont à examiner au cas par cas.
 
-##### Intérêt pour le cabinet
+#### Intérêt pour le cabinet
 
 La conférence fournit des éléments concrets pour chiffrer les besoins d'une victime lourdement atteinte et ceux de ses proches aidants.
 
@@ -295,7 +283,7 @@ Un argument à exploiter. Le témoignage de Josée montre que le lève-personne 
 
 Prescription : les ergothérapeutes, les associations d'aidants et les associations de patients atteints de maladies neuromusculaires sont des relais pertinents. Les infirmières en santé au travail et les HSE engagés dans le maintien dans l'emploi aussi.
 
-##### Pistes éditoriales
+#### Pistes éditoriales
 
 | Format | Sujet | Angle |
 | --- | --- | --- |
@@ -304,22 +292,22 @@ Prescription : les ergothérapeutes, les associations d'aidants et les associati
 | Newsletter | Inaptitude après un accident du travail : l'aménagement de poste avant le licenciement | Le reclassement et les solutions techniques que l'employeur doit étudier |
 | Post LinkedIn | Un lève-personne ne fait pas gagner de temps | Pourquoi le temps d'aide humaine est souvent sous-évalué |
 
-##### Sources
+#### Sources
 
 - [INRS, exosquelettes, points de repère pour la prévention](https://www.inrs.fr/risques/exosquelettes/points-repere-prevention.html)
 - [INRS, exosquelettes, foire aux questions](https://www.inrs.fr/risques/exosquelettes/faq.html)
 
-### 14h00 – 15h00 · Santé au travail, de l’usage du droit en pratique
+## 14h00 – 15h00 · Santé au travail, de l’usage du droit en pratique
 *Conférence · Salle plénière*
 
 Rencontre d’auteurs. Filmée : replay sur preventica.com (rubrique webinars).
 
-#### Santé au travail : de l'obligation de sécurité à la souffrance au travail dans le service public
+### Santé au travail : de l'obligation de sécurité à la souffrance au travail dans le service public
 
 Victimes & Préjudices Avocats · Veille Preventica 2026
 Synthèse établie le 6 octobre 2026 à partir de la transcription de la conférence. Document interne.
 
-##### Fiche conférence
+#### Fiche conférence
 
 Intérêt pour le cabinet : élevé pour l'argumentaire. La conférence croise deux ouvrages et deux regards : celui d'un ancien inspecteur du travail devenu haut fonctionnaire, et celui d'une avocate qui défend les agents publics contre l'administration. Elle fournit une grille de lecture de l'obligation de sécurité directement utilisable contre un employeur qui se défend par des mesures de façade.
 
@@ -330,7 +318,7 @@ Intérêt pour le cabinet : élevé pour l'argumentaire. La conférence croise d
 | Intervenante | Christelle Mazza, avocate au barreau de Paris, spécialisée en droit de la fonction publique et en droit pénal du travail. Autrice de Souffrance au travail dans le service public. Sortir du silence, entrer en résistance, préfacé par Christophe Dejours |
 | Événement | Preventica 2026 |
 
-##### Messages clés
+#### Messages clés
 
 - L'obligation de sécurité a connu deux temps forts. En 2002, la Cour de cassation consacre une obligation de sécurité de résultat. En 2015, l'arrêt Air France permet à l'employeur de s'exonérer s'il prouve avoir appliqué tous les principes généraux de prévention.
 - Pour Hervé Lanouzière, l'arrêt de 2015 n'allège rien. Il reste très exigeant, car l'employeur doit prouver l'application de tous les principes. Il préfère parler d'objectif à atteindre plutôt que d'obligation de moyens renforcée.
@@ -345,7 +333,7 @@ Intérêt pour le cabinet : élevé pour l'argumentaire. La conférence croise d
 - Hervé Lanouzière plaide pour une approche organisationnelle des conflits au travail, plutôt qu'individuelle ou compassionnelle. Il critique le réflexe consistant à constituer un dossier contre un agent en difficulté.
 - Selon Christelle Mazza, un rapport parlementaire sur la souffrance au travail a été écarté sans débat en juillet. Cette affirmation n'a pas été vérifiée.
 
-##### Éléments juridiques mobilisables
+#### Éléments juridiques mobilisables
 
 Le socle est l'article L4121-2 du Code du travail. L'employeur qui ne justifie que de mesures tertiaires, comme une cellule d'écoute ou un coaching, ne démontre pas l'application des principes généraux de prévention.
 
@@ -358,7 +346,7 @@ Le socle est l'article L4121-2 du Code du travail. L'employeur qui ne justifie q
 | Directive 89/391/CEE du 12 juin 1989 | Directive cadre sur la santé et la sécurité. Elle couvre les travailleurs publics comme privés | Non vérifié en ligne, référence classique |
 | Décret n° 82-453 du 28 mai 1982 | Application aux agents de l'État des règles de la quatrième partie du Code du travail | Non vérifié en ligne. La transcription parle d'un « décret de 1982 » |
 
-##### Intérêt pour le cabinet
+#### Intérêt pour le cabinet
 
 La conférence donne un cadre argumentaire pour les dossiers de souffrance au travail, dans le privé comme dans le public.
 
@@ -391,7 +379,7 @@ Un argument à exploiter. L'arrêt Air France est souvent invoqué par l'employe
 
 Prescription : les deux intervenants sont des relais d'opinion reconnus. Christelle Mazza intervient côté agents publics, avec une association de défense des lanceurs d'alerte. Les ergonomes et préventeurs hospitaliers présents dans la salle sont aussi des interlocuteurs pertinents.
 
-##### Pistes éditoriales
+#### Pistes éditoriales
 
 | Format | Sujet | Angle |
 | --- | --- | --- |
@@ -400,47 +388,9 @@ Prescription : les deux intervenants sont des relais d'opinion reconnus. Christe
 | Newsletter | Agent public victime de souffrance au travail : quelle indemnisation ? | Imputabilité au service et réparation complémentaire devant le juge administratif |
 | Post LinkedIn | Un accident peut survenir avec un équipement conforme | La conformité technique ne remplace pas l'évaluation des risques |
 
-##### Sources
+#### Sources
 
 - [Légifrance, Cass. soc., 25 novembre 2015, n° 14-24.444](https://www.legifrance.gouv.fr/juri/id/JURITEXT000031539712/)
 - [Éditions Tissot, affaire France Télécom et harcèlement moral institutionnel](https://www.editions-tissot.fr/actualite/sante-securite/affaire-france-telecom-la-notion-de-harcelement-moral-institutionnel-definitivement-consacree)
 - [LGDJ, La santé au travail, droit et pratique](https://www.lgdj.fr/la-sante-au-travail-9782717872736.html)
 - [LGDJ, Souffrance au travail dans le service public](https://www.lgdj.fr/souffrance-au-travail-dans-le-service-public-9782867397929.html)
-
-## Cartes données (12)
-
-| Photo | Heure | Lieu | Interlocuteur | Fonction · Société | Coordonnées | Note |
-|---|---|---|---|---|---|---|
-|  | 10h53 | Hapo | Bérenger LETELLIER | Director · Hapo | 0607444873<br>[b.letellier@hapo.eu](mailto:b.letellier@hapo.eu) | Exosquelette non motorisé |
-|  | 13h32 | A22a · ATHA | Valerie | ATHA | 0666042998<br>[atha.president@orange.fr](mailto:atha.president@orange.fr) | www.atha.fr |
-|  | 14h03 | ARJO | Sébastien DESESTRET | Responsable Commercial · Arjo |  |  |
-|  | 15h38 | Cards | Mathieu Thomas | Fondateur · Cards |  | Formation |
-|  | 15h40 | 14h00 · Santé au travail, de l’usage du droit en pratique | Christelle MAZZA | Avocate |  |  |
-|  | 15h41 | Conf | Dr LIEUTAUD | Médecin du travail · Métropole de Grenoble |  |  |
-|  | 16h40 | Japet | Anaïs Schoreel | Japet |  |  |
-|  | 17h23 | Imaxio | — |  |  |  |
-|  | 17h23 | A10c · Prodergo | — | Prodergo |  |  |
-|  | 17h35 | Organisation du salon | — |  |  |  |
-|  | 19h36 | German Bionic | Louis Darfeuille | Sales Manager France · German Bionic | 0789345823<br>[l.darfeuille@germanbionic.com](mailto:l.darfeuille@germanbionic.com) |  |
-|  | 19h38 | PhysiOstéo | Alexandre GUYOT | Co-fondateur · PhysiOstéo | 0635203819 |  |
-
-## Stands visités (2)
-
-- **Allée A** : A10c Prodergo, A22a ATHA
-
-## Fichiers
-
-- [syntheses.md](syntheses.md) : toutes les synthèses en un document
-- [contacts.csv](contacts.csv) : les cartes données (tableau lisible sur GitHub)
-- [contacts-excel.csv](contacts-excel.csv) : la même liste, à ouvrir dans Excel
-- [contacts.vcf](contacts.vcf) : les contacts, à importer dans un carnet d'adresses (Outlook, Contacts…)
-- [photos/](photos/) : les photos des cartes de visite
-- [sauvegarde-preventica-lyon-2026-10-07.json](sauvegarde-preventica-lyon-2026-10-07.json) : la sauvegarde complète, à restaurer dans l'app (Cartes → Exporter et sauvegarder → Restaurer)
-
-## Mettre à jour ces données
-
-1. Dans l'app, sur le téléphone : onglet **Cartes** → **Exporter et sauvegarder** → **Sauvegarde complète**, puis envoyez-vous le fichier.
-2. Sur github.com, ouvrez ce dossier `donnees/`, puis **Add file** → **Upload files**, et déposez le fichier (`sauvegarde-….json`).
-3. Validez avec **Commit changes**. En une à deux minutes, cette page, les synthèses, les contacts et les photos sont régénérés à partir de la sauvegarde la plus récente.
-
-Le site propose aussi ces données publiées sur tout appareil qui n'en a pas encore (votre ordinateur, par exemple).
