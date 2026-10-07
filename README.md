@@ -14,6 +14,16 @@ Les onglets Stands et Questions, et les conférences non suivies, ont été reti
 
 `sw.js` garde l'app utilisable sans réseau quand elle est servie en https : l'ouvrir une fois avec du réseau suffit (le volet « Exporter et sauvegarder » indique « Hors ligne : prêt »).
 
+## Données publiées sur GitHub
+
+Le dossier [`donnees/`](donnees/) rassemble, en clair et en public, ce qui a été réalisé au salon : bilan, synthèses, cartes données et interlocuteurs, photos des cartes de visite, stands visités.
+
+1. Dans l'app : **Cartes** → **Exporter et sauvegarder** → **Sauvegarde complète**, puis s'envoyer le fichier.
+2. Sur github.com, ouvrir `donnees/`, puis **Add file** → **Upload files**, déposer le fichier `sauvegarde-….json` et valider (**Commit changes**).
+3. L'action GitHub « Publier les données du salon » (`.github/workflows/donnees.yml`, script `outils/publier-donnees.mjs`) régénère alors `donnees/README.md` (le bilan), `syntheses.md`, `contacts.csv`, `contacts-excel.csv`, `contacts.vcf` et `photos/` à partir de la sauvegarde la plus récente.
+
+Sur un appareil qui n'a pas encore de données (un ordinateur, par exemple), le site propose de charger la dernière sauvegarde publiée.
+
 ## Données
 
 Tout est enregistré dans le navigateur du téléphone (localStorage, et IndexedDB pour les photos), rien n'est envoyé ailleurs. Le volet « Exporter et sauvegarder » (onglet Cartes) permet de récupérer :
