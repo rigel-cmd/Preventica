@@ -24,6 +24,20 @@ Le dossier [`donnees/`](donnees/) rassemble, en clair et en public, ce qui a ét
 
 Sur un appareil qui n'a pas encore de données (un ordinateur, par exemple), le site propose de charger la dernière sauvegarde publiée.
 
+### Fiches de synthèse PDF
+
+[`donnees/fiches/`](donnees/fiches/) contient une fiche d'une page A4 par conférence suivie, au design du site, et un PDF qui les réunit toutes. Ce sont des versions condensées des synthèses de `donnees/syntheses.md`. Elles ne sont pas régénérées par l'action.
+
+Le contenu condensé est dans `outils/fiches/fiches.json`. Le rendu passe par `outils/fiches/rendu.mjs` (Chromium via Playwright, polices Poppins et Open Sans) :
+
+```sh
+npm i --no-save playwright @fontsource/poppins @fontsource/open-sans
+npx playwright install chromium
+node outils/fiches/rendu.mjs outils/fiches/fiches.json donnees/fiches/fiches-preventica-lyon-2026.pdf --dossier donnees/fiches
+```
+
+Le script signale toute fiche qui ne tient plus sur une page (« DÉBORDE ») et sort alors en erreur.
+
 ## Données
 
 Tout est enregistré dans le navigateur du téléphone (localStorage, et IndexedDB pour les photos), rien n'est envoyé ailleurs. Le volet « Exporter et sauvegarder » (onglet Cartes) permet de récupérer :
