@@ -311,6 +311,7 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
 <section class="vpo-vue" id="vpo-vue-programme" role="tabpanel" aria-labelledby="vpo-o-programme">
 <div class="vpo-tete"><div><span class="vpo-mini">Mardi 6 octobre</span><h2 class="vpo-h2">Les conférences <span class="vpo-rouge">suivies</span></h2><p class="vpo-bilan" id="vpo-bilan"></p></div><button type="button" class="vpo-btn" id="vpo-btn-maintenant" hidden>Maintenant</button></div>
 <div class="vpo-rail" id="vpo-rail" aria-label="Créneaux"></div>
+<div class="vpo-fin" id="vpo-publiees" hidden><span id="vpo-publiees-txt"></span><button type="button" class="vpo-btn" data-charger-publiees>Charger</button></div>
 <div class="vpo-fin" id="vpo-fin" hidden><span id="vpo-fin-txt"></span><button type="button" class="vpo-btn" data-sauvegarder>Sauvegarder</button></div>
 <ol class="vpo-carrousel" id="vpo-carrousel" aria-label="Conférences suivies, faire glisser pour passer à la suivante">
 <li data-debut="09:45" data-fin="10:15" data-court="9h45"><div class="vpo-diapo"><span class="vpo-encours">En cours</span><span class="vpo-heure">9h45 – 10h15</span><p class="vpo-lieu"><span class="vpo-type">Atelier</span><span class="vpo-mini">Atelier Solution 3</span></p><h3 class="vpo-h3">Sécuriser les opérateurs lors du travail en hauteur</h3><p class="vpo-texte">Tubesca-Comabi. Réglementation, plateformes individuelles roulantes, PEMP et échafaudages.</p></div></li>
@@ -432,6 +433,7 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
 </div>
 <h3 class="vpo-intertitre">Autre téléphone</h3>
 <div class="vpo-liste-btn">
+<button type="button" class="vpo-btn vpo-btn--clair" id="vpo-ex-publiees" data-charger-publiees hidden><span>Charger les données publiées sur GitHub<small id="vpo-ex-publiees-txt"></small></span></button>
 <button type="button" class="vpo-btn vpo-btn--clair" id="vpo-ex-restaurer"><span>Restaurer une sauvegarde<small>Remplace les données de ce téléphone</small></span></button>
 <input type="file" id="vpo-ex-fichier" accept=".json,application/json" hidden>
 </div>
@@ -1330,28 +1332,52 @@ display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:auto minmax(
     navigator.serviceWorker.addEventListener('controllerchange',majHorsLigne);
   }
   $('#vpo-ex-restaurer').addEventListener('click',function(){var i=$('#vpo-ex-fichier');i.value='';i.click();});
+  /* Restauration : remplace les données de ce navigateur par une sauvegarde (fichier choisi ou publiée sur GitHub) */
+  function restaurer(d,origine){
+    if(!d||d.app!=='vpo-preventica-lyon-2026'){message('Ce fichier n’est pas une sauvegarde du parcours');return;}
+    if(aDesDonnees()){
+      var perte=!besoinSauvegarde()?'':ui.sauvegarde?'\n\nAttention : '+(ui.modifs|0)+' modification(s) faites sur cet appareil depuis la dernière sauvegarde seront perdues.':'\n\nAttention : les données de cet appareil n’ont jamais été sauvegardées et seront perdues.';
+      if(!window.confirm('Remplacer les données de cet appareil par '+origine+' du '+dateLongue(d.date)+' ?'+perte))return;
+    }
+    ecrire(CLE,d.stands&&typeof d.stands==='object'?d.stands:{});
+    ecrire(CLE_CONTACTS,Array.isArray(d.contacts)?d.contacts:[]);
+    ecrire(CLE_SYNTH,d.syntheses&&typeof d.syntheses==='object'?d.syntheses:{});
+    if(+d.stock>0)ui.stock=+d.stock;
+    ui.sauvegarde=d.date;ui.modifs=0;ecrire(CLE_UI,ui);
+    var ph=d.photos&&typeof d.photos==='object'?d.photos:{};
+    message('Chargement des données…');
+    photosVider().catch(function(){}).then(function(){
+      return Promise.all(Object.keys(ph).filter(function(k){return /^data:image\//.test(ph[k]);}).map(function(k){
+        return fetch(ph[k]).then(function(x){return x.blob();}).then(function(b){return photoEcrire(k,b);}).catch(function(){});
+      }));
+    }).then(function(){window.location.reload();});
+  }
   $('#vpo-ex-fichier').addEventListener('change',function(){
     var fi=this.files&&this.files[0];if(!fi)return;
     var r=new FileReader();
-    r.onload=function(){
-      var d=null;try{d=JSON.parse(r.result);}catch(e){}
-      if(!d||d.app!=='vpo-preventica-lyon-2026'){message('Ce fichier n’est pas une sauvegarde du parcours');return;}
-      var perte=!besoinSauvegarde()?'':ui.sauvegarde?'\n\nAttention : '+(ui.modifs|0)+' modification(s) faites sur ce téléphone depuis la dernière sauvegarde seront perdues.':'\n\nAttention : les données de ce téléphone n’ont jamais été sauvegardées et seront perdues.';
-      if(!window.confirm('Remplacer les données de ce téléphone par la sauvegarde du '+dateLongue(d.date)+' ?'+perte))return;
-      ecrire(CLE,d.stands&&typeof d.stands==='object'?d.stands:{});
-      ecrire(CLE_CONTACTS,Array.isArray(d.contacts)?d.contacts:[]);
-      ecrire(CLE_SYNTH,d.syntheses&&typeof d.syntheses==='object'?d.syntheses:{});
-      if(+d.stock>0)ui.stock=+d.stock;
-      ui.sauvegarde=d.date;ui.modifs=0;ecrire(CLE_UI,ui);
-      var ph=d.photos&&typeof d.photos==='object'?d.photos:{};
-      photosVider().catch(function(){}).then(function(){
-        return Promise.all(Object.keys(ph).filter(function(k){return /^data:image\//.test(ph[k]);}).map(function(k){
-          return fetch(ph[k]).then(function(x){return x.blob();}).then(function(b){return photoEcrire(k,b);}).catch(function(){});
-        }));
-      }).then(function(){window.location.reload();});
-    };
+    r.onload=function(){var d=null;try{d=JSON.parse(r.result);}catch(e){}restaurer(d,'la sauvegarde');};
     r.readAsText(fi);
   });
+  /* Données publiées sur GitHub (dossier donnees/, voir donnees/README.md) : proposées sur un appareil encore vide */
+  var publiees=null;
+  function majPubliees(){
+    var vide=!aDesDonnees(),txt=publiees?'Sauvegarde du '+dateLongue(publiees.date)+' · '+(publiees.cartes|0)+' carte'+((publiees.cartes|0)>1?'s':'')+', '+(publiees.syntheses|0)+' synthèse'+((publiees.syntheses|0)>1?'s':''):'';
+    $('#vpo-publiees').hidden=!publiees||!vide;
+    $('#vpo-publiees-txt').textContent=publiees?'Données du salon publiées sur GitHub\u00a0: '+txt:'';
+    $('#vpo-ex-publiees').hidden=!publiees;
+    $('#vpo-ex-publiees-txt').textContent=txt+(vide?'':' · remplace les données de cet appareil');
+  }
+  $$('[data-charger-publiees]').forEach(function(b){b.addEventListener('click',function(){
+    if(!publiees)return;
+    message('Téléchargement des données publiées…');
+    fetch('donnees/'+publiees.fichier,{cache:'no-cache'}).then(function(r){if(!r.ok)throw r;return r.json();}).then(function(d){fermerTous();restaurer(d,'la sauvegarde publiée');},function(){message('Données publiées introuvables');});
+  });});
+  if(/^https?:$/.test(window.location.protocol)){
+    fetch('donnees/index.json',{cache:'no-cache'}).then(function(r){return r.ok?r.json():null;}).then(function(ix){
+      if(!ix||typeof ix.fichier!=='string'||!/^sauvegarde[\w.-]*\.json$/i.test(ix.fichier))return;
+      publiees=ix;majPubliees();
+    }).catch(function(){});
+  }
 
   /* ——— Démarrage ——— */
   majContacts();majSynth();majSauvegarde();majEnsuite();majHorsLigne();
