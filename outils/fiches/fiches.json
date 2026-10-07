@@ -1,0 +1,460 @@
+[
+ {
+  "id": "c0945",
+  "heure": "9h45 – 10h15",
+  "type": "Atelier",
+  "salle": "Atelier Solution 3",
+  "titre": "Sécuriser les opérateurs lors du travail en hauteur",
+  "organisme": "Tubesca-Comabi, fabricant français d'équipements d'accès en hauteur",
+  "intervenants": "Richard (référent normes) et Cédric, Tubesca-Comabi",
+  "format": "Environ 45 minutes. Rappel réglementaire puis démonstration de produits",
+  "interet": {
+   "niveau": "Modéré",
+   "texte": "Présentation commerciale d'un fabricant. Elle reste exploitable sur l'escabeau ou l'échelle comme poste de travail et fournit une grille de questions pour qualifier une chute de hauteur en faute inexcusable."
+  },
+  "messages": [
+   "La chute de hauteur est présentée comme le risque le plus mortel après le risque routier (+ de 90 décès par an).",
+   "Le décret de 2004 impose de prioriser la protection collective.",
+   "Échelle, escabeau et marchepied sont des moyens d'accès. Plateforme et échafaudage sont des postes de travail.",
+   "Dès que la tâche n'est plus courte, devient répétitive ou exige les deux mains, il faut passer à un **poste de travail**.",
+   "Normes et labels, comme NF, ne sont pas obligatoires."
+  ],
+  "juridique": {
+   "socle": "Socle utile : **R4323-63 C. trav.** Il interdit par principe l'escabeau comme poste de travail, cas fréquent dans les dossiers de chute.",
+   "textes": [
+    {
+     "ref": "Décret n° 2004-924 du 1er septembre 2004",
+     "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018489845/",
+     "apport": "Travaux temporaires en hauteur. Codifié aux art. R4323-58 à R4323-90 C. trav. La transcription indique à tort 2004-929.",
+     "statut": "Vérifié",
+     "verifie": true
+    },
+    {
+     "ref": "Art. R4323-63 C. trav.",
+     "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018489845/",
+     "apport": "Échelles, escabeaux et marchepieds interdits comme poste de travail, sauf impossibilité technique de protection collective, ou risque faible et travaux courts non répétitifs.",
+     "statut": "Vérifié",
+     "verifie": true
+    },
+    {
+     "ref": "Arrêté du 1er mars 2004, art. 23",
+     "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006680469",
+     "apport": "Vérification générale périodique tous les 6 mois (appareils motorisés d'élévation de personnes), 3 mois (mus par la force humaine, élevant un poste de travail).",
+     "statut": "Vérifié",
+     "verifie": true
+    },
+    {
+     "ref": "INRS, échelles et escabeaux",
+     "url": "https://www.inrs.fr/risques/chutes-hauteur/equipements-acces-hauteur.html",
+     "apport": "En 2019, plus de 16 % des chutes avec incapacité permanente sont des chutes d'échelle ou d'escabeau.",
+     "statut": "Vérifié · données 2019",
+     "verifie": true
+    }
+   ]
+  },
+  "cabinet": {
+   "profils": [
+    "Ouvriers du BTP, premier secteur des chutes mortelles.",
+    "Agents de maintenance et des services généraux.",
+    "Commerce, hôtellerie et logistique (mise en rayon).",
+    "Intérimaires et CDD : présomption de faute inexcusable."
+   ],
+   "questions": [
+    "Échelle, escabeau, marchepied, plateforme ou échafaudage ?",
+    "Combien de temps durait la tâche ? Était-elle quotidienne ?",
+    "Aviez-vous besoin de vos deux mains ?",
+    "Un équipement plus sûr existait-il dans l'entreprise ?",
+    "Avez-vous été formé au travail en hauteur ?",
+    "Le risque avait-il été signalé par vous, un collègue ou le CSE ?"
+   ],
+   "pieces": [
+    "Le DUERP et la mention du risque de chute de hauteur.",
+    "Le registre des vérifications périodiques, si une plateforme élévatrice est en cause.",
+    "La conformité de l'équipement (NF EN 131 pour les échelles).",
+    "Les attestations de formation.",
+    "Les comptes rendus du CSE et toute enquête de l'inspection du travail ou de la Carsat."
+   ],
+   "argument": "Les Carsat subventionnent en partie, sous conditions, l'achat d'équipements plus sûrs. Des alternatives à l'escabeau existent donc à coût maîtrisé. L'employeur aura du mal à invoquer l'**impossibilité technique** de R4323-63.",
+   "prescription": "Aucune piste directe. Interlocuteurs pertinents : CSE, CSSCT et services de prévention et de santé au travail."
+  },
+  "pistes": [
+   {
+    "format": "Post LinkedIn",
+    "sujet": "Un escabeau n'est pas un poste de travail",
+    "angle": "R4323-63 expliqué au salarié : ce qu'il change après une chute"
+   },
+   {
+    "format": "Article juridique",
+    "sujet": "Chute d'échelle au travail : quand retenir la faute inexcusable ?",
+    "angle": "Conscience du danger et exceptions de R4323-63"
+   },
+   {
+    "format": "Newsletter",
+    "sujet": "Intérimaire blessé en hauteur",
+    "angle": "La présomption de faute inexcusable et les questions à se poser"
+   },
+   {
+    "format": "Post LinkedIn",
+    "sujet": "Chute de faible hauteur, préjudice lourd",
+    "angle": "Selon l'INRS, un danger sous-estimé. Les séquelles peuvent être graves"
+   }
+  ],
+  "sources": [
+   {
+    "libelle": "Légifrance, Code du travail, art. R4323-58 à R4323-90",
+    "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006072050/LEGISCTA000018489845/"
+   },
+   {
+    "libelle": "Légifrance, arrêté du 1er mars 2004, art. 23",
+    "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000006680469"
+   },
+   {
+    "libelle": "INRS, risques liés aux chutes de hauteur",
+    "url": "https://www.inrs.fr/risques/chutes-hauteur/ce-qu-il-faut-retenir.html"
+   },
+   {
+    "libelle": "INRS, échelles, escabeaux et marchepieds",
+    "url": "https://www.inrs.fr/risques/chutes-hauteur/equipements-acces-hauteur.html"
+   }
+  ],
+  "fichier": "fiche-0945-travail-en-hauteur.pdf"
+ },
+ {
+  "id": "c1045",
+  "heure": "10h45 – 11h30",
+  "type": "Conférence",
+  "salle": "Salle A",
+  "titre": "Le PPSPS, outil de prévention des risques sur les chantiers",
+  "organisme": "OPPBTP, organisme professionnel de prévention du BTP",
+  "intervenants": "Trois intervenants de l'OPPBTP, dont un juriste. Prénoms cités : Sébastien et Frédéric",
+  "format": "Exposé juridique puis déclinaison pratique",
+  "interet": {
+   "niveau": "Élevé",
+   "texte": "Un revirement de jurisprudence élargit le cercle des entreprises tenues d'établir un PPSPS. Il élargit du même coup le cercle des manquements invocables après un accident sur un chantier coordonné."
+  },
+  "messages": [
+   "Toute entreprise intervenant à un moment quelconque des travaux doit établir un PPSPS dès lors qu'un PGC existe.",
+   "Le **critère contractuel disparaît**. Seule compte la nature de l'intervention, pas le contrat (location, prêt, livraison).",
+   "Sont visés : ouvrage, installation ou maintenance des moyens du chantier, essais ou mises en service avant réception.",
+   "L'urgence, interprétée strictement (panne bloquant le chantier, menace pour la sécurité des travailleurs), dispense du PPSPS.",
+   "Les intervenants hors champ (prestations intellectuelles, livraison simple) doivent connaître les risques du chantier. Le coordonnateur SPS doit être informé de leur venue."
+  ],
+  "juridique": {
+   "socle": "Socle : **art. L4532-9 C. trav.**, relu par l'arrêt du 14 janvier 2025. L'absence de PPSPS devient un manquement identifiable.",
+   "textes": [
+    {
+     "ref": "Cass. crim., 14 janvier 2025, n° 23-84.130",
+     "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000051012931/",
+     "apport": "Accident mortel, maintenance d'une grue à tour. Pourvoi rejeté. Obligation de PPSPS pour toute entreprise dont les travaux concourent à l'opération, maintenance comprise.",
+     "statut": "Vérifié · publié au bulletin",
+     "verifie": true
+    },
+    {
+     "ref": "Art. L4532-9 C. trav.",
+     "url": null,
+     "apport": "PPSPS établi avant les travaux par chaque entreprise, sous-traitants compris. La transcription indique « L 45 329 ».",
+     "statut": "Vérifié",
+     "verifie": true
+    },
+    {
+     "ref": "Questions-réponses DGT, mars 2026",
+     "url": "https://www.espace-droit-prevention.com/sites/default/files/2026-03/20260317_Obligation-redaction_PPSPS-QR-Mars-2026.pdf",
+     "apport": "Interprétation administrative : champ, exclusions, urgence stricte, intervenants hors champ.",
+     "statut": "Vérifié · sans valeur normative",
+     "verifie": true
+    }
+   ]
+  },
+  "cabinet": {
+   "profils": [
+    "Mainteneurs de grues, monte-charges et échafaudages.",
+    "Techniciens d'essais et de mises en service.",
+    "Livreurs qui posent ou mettent en œuvre ce qu'ils livrent.",
+    "Conducteurs d'engins loués avec chauffeur (PPSPS du locataire, sauf s'ils travaillent en autonomie).",
+    "Prestataires hors champ mal informés des risques."
+   ],
+   "questions": [
+    "Qui vous employait, et pour qui interveniez-vous ?",
+    "Travaux, maintenance, essai, livraison avec ou sans pose ?",
+    "Intervention planifiée ou présentée comme urgente ?",
+    "Un coordonnateur SPS était-il présent ?",
+    "Inspection commune suivie ou consignes de sécurité reçues ?"
+   ],
+   "pieces": [
+    "Le PGC et les PPSPS de toutes les entreprises présentes.",
+    "Le registre-journal de la coordination et les comptes rendus d'inspection commune.",
+    "Le DHOL (livraison, R476) ou le contrat de location d'engin.",
+    "Le PV de l'inspection du travail, l'éventuelle décision pénale."
+   ],
+   "argument": "La DGT écarte l'urgence en cas de **défaut de planification** ou de commande tardive. L'employeur ne pourra pas s'en prévaloir pour une intervention prévue de longue date.",
+   "prescription": "L'OPPBTP et les coordonnateurs SPS sont des relais d'information, pas des prescripteurs directs. Cible plus pertinente : les CSE des entreprises de maintenance et de location d'engins."
+  },
+  "pistes": [
+   {
+    "format": "Article juridique",
+    "sujet": "Accident sur un chantier : le PPSPS s'impose désormais à tous les intervenants",
+    "angle": "Victimes de la maintenance"
+   },
+   {
+    "format": "Post LinkedIn",
+    "sujet": "Technicien de maintenance blessé sur un chantier : vos droits ont changé",
+    "angle": "Le critère contractuel disparaît"
+   },
+   {
+    "format": "Newsletter",
+    "sujet": "Accident du travail sur chantier : qui est responsable ?",
+    "angle": "Faute inexcusable et recours contre les tiers"
+   },
+   {
+    "format": "Post LinkedIn",
+    "sujet": "L'urgence ne justifie pas tout",
+    "angle": "Le défaut de planification n'exonère pas de PPSPS"
+   }
+  ],
+  "sources": [
+   {
+    "libelle": "Légifrance, Cass. crim., 14 janvier 2025, n° 23-84.130",
+    "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000051012931/"
+   },
+   {
+    "libelle": "Questions-réponses DGT, mars 2026",
+    "url": "https://www.espace-droit-prevention.com/sites/default/files/2026-03/20260317_Obligation-redaction_PPSPS-QR-Mars-2026.pdf"
+   },
+   {
+    "libelle": "OPPBTP, communiqué de presse du 12 mars 2026",
+    "url": "https://www.oppbtp.com/app/uploads/2026/03/CP_QR-DGT-PPSPS_MARS-2026.pdf"
+   },
+   {
+    "libelle": "PréventionBTP, l'arrêt qui bouscule les pratiques",
+    "url": "https://www.preventionbtp.fr/actualites/reglementation/jurisprudence-un-ppsps-pour-tout-intervenant-sur-le-chantier_7PppcXfKm9Mva4R5bitFxK"
+   },
+   {
+    "libelle": "Éditions Tissot, PPSPS et entreprises intervenantes",
+    "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/plan-particulier-de-securite-et-de-protection-de-la-sante-toutes-les-entreprises-intervenant-sur-le-chantier-sont-concernees"
+   },
+   {
+    "libelle": "CNAM, recommandation R476",
+    "url": "https://www.ameli.fr/sites/default/files/Documents/31348/document/r476.pdf"
+   }
+  ],
+  "fichier": "fiche-1045-ppsps-chantiers.pdf"
+ },
+ {
+  "id": "c1115",
+  "heure": "11h15 – 12h15",
+  "type": "Conférence",
+  "salle": "Salle B",
+  "titre": "UX-Forum Innovation : exosquelettes",
+  "organisme": "Cercle Entreprises et Santé, association d'intérêt général",
+  "intervenants": "L'animatrice. Sandra et Virginie (Triballat). Josée, aidante. Mathieu (Auxilife). Anaïs, intégratrice. Kevin (HMT)",
+  "format": "Table ronde d'une heure, trois témoignages puis échanges",
+  "interet": {
+   "niveau": "Élevé",
+   "texte": "Sur un angle inattendu, la conférence documente l'exosquelette comme aide technique, au travail et à domicile. Elle aide à évaluer les besoins d'une victime : aides techniques, tierce personne, maintien dans l'emploi."
+  },
+  "messages": [
+   "Josée, aidante de sa fille atteinte d'une maladie neuromusculaire sévère, faisait chaque matin trois transferts au lève-personne de 10 à 15 minutes chacun.",
+   "L'exosquelette lui fait gagner environ 40 minutes par matinée. Il a été financé en partie par la PCH via la MDPH.",
+   "Selon les intervenants, il **ne donne pas de force supplémentaire** : il réduit la douleur et la fatigue, sans remplacer le lève-personne ni les autres aides techniques.",
+   "Triballat a intégré des exosquelettes contre les TMS. Une salariée absente plusieurs mois par an pour des douleurs d'épaule a repris durablement son poste.",
+   "Pour les salariés reconnus travailleurs handicapés, Cap emploi et l'Agefiph financeraient environ 80 % du prix selon les intervenantes. Ce taux n'est pas un barème officiel."
+  ],
+  "juridique": {
+   "socle": "La conférence ne cite aucun texte.",
+   "textes": [
+    {
+     "ref": "INRS, points de repère pour la prévention",
+     "url": "https://www.inrs.fr/risques/exosquelettes/points-repere-prevention.html",
+     "apport": "Avant l'exosquelette, l'employeur doit explorer toutes les pistes de réduction de la charge physique",
+     "statut": "Vérifié",
+     "verifie": true
+    },
+    {
+     "ref": "Art. L1226-10 C. trav.",
+     "url": null,
+     "apport": "Reclassement du salarié inapte après AT ou MP, y compris par aménagement, adaptation ou transformation de poste",
+     "statut": "Non vérifié en ligne",
+     "verifie": false
+    }
+   ],
+   "ajouts": {
+    "titre": "Ajouts du rédacteur, hors conférence, à confirmer par les avocats du cabinet",
+    "items": [
+     "Un exosquelette peut être réclamé en besoins futurs, avec son renouvellement. Poste de rattachement à vérifier.",
+     "Si la défense soutient qu'il réduit la tierce personne, les intervenants le contredisent : il ne fait pas le transfert."
+    ]
+   }
+  },
+  "cabinet": {
+   "profils": [
+    "TMS reconnus en MP, notamment d'épaule et de dos.",
+    "Aide à domicile, agroalimentaire, logistique.",
+    "Handicap lourd nécessitant des transferts quotidiens.",
+    "Proches aidants, eux-mêmes exposés aux blessures."
+   ],
+   "titreQuestions": "Questions à la victime ou à ses proches",
+   "questions": [
+    "Combien de transferts par jour, de quelle durée ?",
+    "Quelles aides techniques sont déjà utilisées ?",
+    "L'aidant a-t-il des douleurs ou s'est-il blessé ?",
+    "Un exosquelette a-t-il été essayé, avec quel résultat ?",
+    "Un financement a-t-il été demandé à la MDPH, à l'Agefiph ou à Cap emploi ?",
+    "En cas d'inaptitude, l'employeur a-t-il étudié un aménagement de poste ?"
+   ],
+   "pieces": [
+    "Comptes rendus d'essai, préconisations de l'ergothérapeute.",
+    "Devis, durée de vie et entretien des aides techniques.",
+    "Décision MDPH et plan de compensation du handicap.",
+    "Avis du médecin du travail et échanges sur le reclassement.",
+    "Relevé du temps d'aide quotidienne des proches."
+   ],
+   "argument": "Le témoignage de Josée montre que le lève-personne **allonge chaque transfert**. Le temps réel d'aide humaine dépasse l'évaluation théorique, ce qui peut appuyer une demande d'heures de tierce personne plus élevée.",
+   "prescription": "Ergothérapeutes, associations d'aidants et de malades neuromusculaires, infirmières en santé au travail, HSE."
+  },
+  "pistes": [
+   {
+    "format": "Article juridique",
+    "sujet": "Exosquelette et indemnisation : une aide technique à faire valoir",
+    "angle": "Ce que la victime peut réclamer"
+   },
+   {
+    "format": "Post LinkedIn",
+    "sujet": "Aidant familial : votre aide a une valeur",
+    "angle": "L'indemnisation de la tierce personne familiale"
+   },
+   {
+    "format": "Newsletter",
+    "sujet": "Inaptitude après un accident du travail : l'aménagement de poste avant le licenciement"
+   },
+   {
+    "format": "Post LinkedIn",
+    "sujet": "Un lève-personne ne fait pas gagner de temps",
+    "angle": "Pourquoi le temps d'aide humaine est souvent sous-évalué"
+   }
+  ],
+  "sources": [
+   {
+    "libelle": "INRS, exosquelettes, points de repère pour la prévention",
+    "url": "https://www.inrs.fr/risques/exosquelettes/points-repere-prevention.html"
+   },
+   {
+    "libelle": "INRS, exosquelettes, foire aux questions",
+    "url": "https://www.inrs.fr/risques/exosquelettes/faq.html"
+   }
+  ],
+  "fichier": "fiche-1115-exosquelettes.pdf"
+ },
+ {
+  "id": "c1400",
+  "heure": "14h00 – 15h00",
+  "type": "Conférence",
+  "salle": "Salle plénière",
+  "titre": "Santé au travail, de l’usage du droit en pratique",
+  "intervenants": "Hervé Lanouzière, ancien inspecteur du travail, ancien directeur de l'ANACT. Christelle Mazza, avocate au barreau de Paris (fonction publique, droit pénal du travail)",
+  "format": "Dialogue entre deux auteurs, animé par un modérateur, suivi de questions de la salle",
+  "interet": {
+   "niveau": "Élevé pour l'argumentaire",
+   "texte": "La conférence fournit une grille de lecture de l'obligation de sécurité, directement utilisable contre un employeur qui se défend par des mesures de façade, dans le privé comme dans le public."
+  },
+  "messages": [
+   "Pour Hervé Lanouzière, l'arrêt **Air France** n'allège rien, et les employeurs se défendent surtout par de la prévention tertiaire, qui ne répond pas aux principes généraux.",
+   "Le juge apprécie les mesures au cas par cas. L'employeur doit tenir compte du changement des circonstances, que les entreprises oublient souvent. L'affaire France Télécom en est l'exemple type.",
+   "Anecdote d'inspection : un ouvrier est mort d'une chute du huitième étage alors que le garde-corps était réglementaire. L'infraction tenait à un défaut d'évaluation des risques.",
+   "Pour Christelle Mazza, la souffrance des agents publics est d'abord éthique, faute de moyens pour leur mission.",
+   "Les règles de santé et sécurité sont les mêmes pour les agents publics et les salariés, mais le juge compétent diffère."
+  ],
+  "juridique": {
+   "socle": "Socle : **art. L4121-2 C. trav.** Une cellule d'écoute ou un coaching seuls ne démontrent pas l'application des principes généraux.",
+   "textes": [
+    {
+     "ref": "Cass. soc., 25 novembre 2015, n° 14-24.444 (Air France)",
+     "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000031539712/",
+     "apport": "Pas de manquement si l'employeur justifie avoir pris toutes les mesures des articles L4121-1 et L4121-2",
+     "statut": "Vérifié · publié au bulletin",
+     "verifie": true
+    },
+    {
+     "ref": "Art. L4121-1 et L4121-2 C. trav.",
+     "url": null,
+     "apport": "Santé physique et mentale, adaptation au changement des circonstances, neuf principes généraux de prévention",
+     "statut": "Non vérifié en ligne",
+     "verifie": false
+    },
+    {
+     "ref": "Cass. crim., 21 janvier 2025, n° 22-87.145 (France Télécom)",
+     "url": "https://www.editions-tissot.fr/actualite/sante-securite/affaire-france-telecom-la-notion-de-harcelement-moral-institutionnel-definitivement-consacree",
+     "apport": "Harcèlement moral institutionnel consacré. Une politique d'entreprise peut caractériser le délit",
+     "statut": "Vérifié",
+     "verifie": true
+    }
+   ]
+  },
+  "cabinet": {
+   "profils": [
+    "Agents publics : soignants, travailleurs sociaux, policiers.",
+    "Salariés touchés par une réorganisation non évaluée.",
+    "Victimes de harcèlement moral, y compris institutionnel.",
+    "Salariés aidants ou malades chroniques non pris en compte."
+   ],
+   "questions": [
+    "Salarié de droit privé, fonctionnaire ou contractuel public ?",
+    "Réorganisation ou baisse d'effectifs avant vos troubles ?",
+    "Avez-vous alerté la hiérarchie, le médecin du travail, la formation spécialisée ou le CSE ?",
+    "Employeur : organisation revue, ou cellule d'écoute seule ?",
+    "Déclaration d'accident de service, d'AT ou de MP ?",
+    "Des collègues dans une situation comparable ?"
+   ],
+   "pieces": [
+    "Le DUERP et son volet risques psychosociaux.",
+    "Le dossier de la réorganisation, l'étude d'impact éventuelle.",
+    "Les PV du CSE ou de la formation spécialisée.",
+    "Les signalements et les réponses de la hiérarchie.",
+    "Le dossier médical en santé au travail, les arrêts de travail.",
+    "La décision d'imputabilité au service (agent public)."
+   ],
+   "argument": "L'arrêt Air France, souvent invoqué par l'employeur, exige la preuve de **toutes les mesures** des articles L4121-1 et L4121-2. Un soutien individuel seul n'y suffit pas.",
+   "prescription": "Les deux intervenants sont des relais d'opinion reconnus. Christelle Mazza agit côté agents publics, avec une association de défense des lanceurs d'alerte."
+  },
+  "pistes": [
+   {
+    "format": "Article juridique",
+    "sujet": "Obligation de sécurité : une cellule d'écoute ne suffit pas",
+    "angle": "Ce qu'exige l'arrêt Air France et comment s'en servir"
+   },
+   {
+    "format": "Post LinkedIn",
+    "sujet": "Réorganisation et souffrance au travail",
+    "angle": "Ce que l'affaire France Télécom a changé"
+   },
+   {
+    "format": "Newsletter",
+    "sujet": "Agent public victime de souffrance au travail : quelle indemnisation ?",
+    "angle": "Imputabilité au service et réparation complémentaire"
+   },
+   {
+    "format": "Post LinkedIn",
+    "sujet": "Un accident peut survenir avec un équipement conforme",
+    "angle": "La conformité ne remplace pas l'évaluation des risques"
+   }
+  ],
+  "sources": [
+   {
+    "libelle": "Légifrance, Cass. soc., 25 novembre 2015, n° 14-24.444",
+    "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000031539712/"
+   },
+   {
+    "libelle": "Éditions Tissot, affaire France Télécom",
+    "url": "https://www.editions-tissot.fr/actualite/sante-securite/affaire-france-telecom-la-notion-de-harcelement-moral-institutionnel-definitivement-consacree"
+   },
+   {
+    "libelle": "LGDJ, La santé au travail, droit et pratique",
+    "url": "https://www.lgdj.fr/la-sante-au-travail-9782717872736.html"
+   },
+   {
+    "libelle": "LGDJ, Souffrance au travail dans le service public",
+    "url": "https://www.lgdj.fr/souffrance-au-travail-dans-le-service-public-9782867397929.html"
+   }
+  ],
+  "fichier": "fiche-1400-sante-au-travail.pdf"
+ }
+]

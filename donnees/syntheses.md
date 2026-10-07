@@ -7,6 +7,8 @@ Mardi 6 octobre 2026, Eurexpo. Synthèses enregistrées avec Plaud (sauvegarde d
 
 Tubesca-Comabi. Réglementation, plateformes individuelles roulantes, PEMP et échafaudages.
 
+[Fiche de synthèse d'une page (PDF)](fiches/fiche-0945-travail-en-hauteur.pdf)
+
 ### Tubesca-Comabi : sécurisation des opérateurs lors du travail en hauteur
 
 Victimes & Préjudices Avocats · Veille Preventica 2026
@@ -103,6 +105,8 @@ Les chiffres INRS de 2019 sont réutilisables à condition de citer la source et
 *Conférence · Salle A*
 
 OPPBTP.
+
+[Fiche de synthèse d'une page (PDF)](fiches/fiche-1045-ppsps-chantiers.pdf)
 
 ### OPPBTP : PPSPS, jurisprudence et évolutions des pratiques
 
@@ -201,6 +205,8 @@ Prescription : l'OPPBTP et les coordonnateurs SPS sont des relais d'information 
 *Conférence · Salle B*
 
 Cercle Entreprises et Santé.
+
+[Fiche de synthèse d'une page (PDF)](fiches/fiche-1115-exosquelettes.pdf)
 
 ### 26e UX-Forum Innovation Exosquelettes : intégrer les différences, inventer de nouveaux usages
 
@@ -301,6 +307,8 @@ Prescription : les ergothérapeutes, les associations d'aidants et les associati
 *Conférence · Salle plénière*
 
 Rencontre d’auteurs. Filmée : replay sur preventica.com (rubrique webinars).
+
+[Fiche de synthèse d'une page (PDF)](fiches/fiche-1400-sante-au-travail.pdf)
 
 ### Santé au travail : de l'obligation de sécurité à la souffrance au travail dans le service public
 
