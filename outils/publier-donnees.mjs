@@ -154,6 +154,16 @@ const vcards = contacts.filter((c) => c.nom || c.tel || c.email).map((c) => {
 }).join('\r\n');
 ecrire('contacts.vcf', vcards ? vcards + '\r\n' : '');
 
+// ---------- Fiches PDF d'une page (donnees/fiches/fiche-HHMM-….pdf, réalisées à part) ----------
+const FICHES = {};
+let fichesReunies = null;
+const dossierFiches = path.join(DOSSIER, 'fiches');
+if (fs.existsSync(dossierFiches)) for (const f of fs.readdirSync(dossierFiches).sort()) {
+  const m = f.match(/^fiche-(\d{4})-.*\.pdf$/i);
+  if (m) FICHES['c' + m[1]] = f; else if (/\.pdf$/i.test(f)) fichesReunies = fichesReunies || f;
+}
+const lienFiche = (f) => 'fiches/' + encodeURIComponent(f);
+
 // ---------- Synthèses ----------
 const idsSuivies = CONFS.map((c) => c.id);
 const aSynth = (id) => !!(synth[id] && synth[id].texte);
@@ -164,6 +174,7 @@ function blocSynthese(id, niveau) {
   const out = [`${h} ${c.heure ? ligne(c.heure) + ' · ' : ''}${ligne(c.titre)}`];
   if (c.salle) out.push(`*${ligne(c.salle)}*`);
   if (CONF_PAR_ID[id] && CONF_PAR_ID[id].detail) out.push('', CONF_PAR_ID[id].detail);
+  if (FICHES[id]) out.push('', `[Fiche de synthèse d'une page (PDF)](${lienFiche(FICHES[id])})`);
   out.push('', aSynth(id) ? decaler(s.texte, niveau) : '_Pas de synthèse enregistrée._');
   if (s.lien) out.push('', `[Écouter l'enregistrement Plaud](${s.lien})`);
   out.push('');
@@ -210,6 +221,7 @@ if (vus.length) {
 } else R.push('_Aucun stand coché._', '');
 R.push('## Fichiers', '',
   '- [syntheses.md](syntheses.md) : toutes les synthèses en un document',
+  ...(Object.keys(FICHES).length ? [`- [fiches/](fiches/) : une fiche de synthèse d'une page A4 par conférence, en PDF${fichesReunies ? ` ([toutes les fiches en un seul PDF](${lienFiche(fichesReunies)}))` : ''}`] : []),
   '- [contacts.csv](contacts.csv) : les cartes données (tableau lisible sur GitHub)',
   '- [contacts-excel.csv](contacts-excel.csv) : la même liste, à ouvrir dans Excel',
   '- [contacts.vcf](contacts.vcf) : les contacts, à importer dans un carnet d\'adresses (Outlook, Contacts…)',
